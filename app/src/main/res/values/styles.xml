@@ -104,7 +104,7 @@
     <style name="BaseTheme.MainAppBar.SearchWidget" parent="Widget.AppCompat.SearchView">
         <item name="android:layout_margin">0dp</item>
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">45dp</item>
+        <item name="android:layout_height">55dp</item>
         <item name="android:paddingLeft">6dp</item>
         <item name="android:paddingRight">6dp</item>
         <item name="queryBackground">@android:color/transparent</item>

@@ -10,7 +10,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/sf_display_heavy"
-            android:textSize="20sp"
+            android:textSize="23sp"
             android:layout_gravity="center"
             android:textAlignment="center"
             android:text="@string/serchview_hint_title" />

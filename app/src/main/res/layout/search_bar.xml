@@ -14,7 +14,10 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_height="50dp"
+        app:cardElevation="10dp"
+        android:translationZ="0dp"
+        app:cardBackgroundColor="#ECECEC"
         style="@style/BaseTheme.Card">
 
         <androidx.appcompat.widget.SearchView
