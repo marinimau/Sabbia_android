@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Sabbia</string>
+    <string name="title_home">Home</string>
+    <string name="title_search">Cerca</string>
+    <string name="home_last_activities_label">Ultime attività</string>
+    <string name="item_title">Title</string>
+    <string name="item_subtitle">Subtitle</string>
+    <string name="home_current_activity_date">2 Luglio, 2020</string>
+    <string name="home_current_activity_distance_num">2,5m</string>
+    <string name="home_current_activity_distance_label">Distanziamento sociale</string>
+    <string name="home_current_activity_beach_label">Spiaggia</string>
+    <string name="home_current_activity_beach_name">S\'archittu</string>
+    <string name="home_current_activity_time_elapsed_label">Permanenza</string>
+    <string name="home_current_activity_time_elapsed">3h</string>
+    <string name="home_current_activity_parking_label">Parcheggio</string>
+    <string name="home_current_activity_parking">Gratuito</string>
+</resources>

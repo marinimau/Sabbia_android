@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <font
+        android:font="@font/sf_display_black"
+        android:fontStyle="normal"
+        android:fontWeight="900"
+
+        app:font="@font/sf_display_black"
+        app:fontStyle="normal"
+        app:fontWeight="900" />
+
+    <font
+        android:font="@font/sf_display_heavy"
+        android:fontStyle="normal"
+        android:fontWeight="800"
+
+        app:font="@font/sf_display_heavy"
+        app:fontStyle="normal"
+        app:fontWeight="800" />
+
+    <font
+        android:font="@font/sf_display_bold"
+        android:fontStyle="normal"
+        android:fontWeight="700"
+
+        app:font="@font/sf_display_bold"
+        app:fontStyle="normal"
+        app:fontWeight="700" />
+
+    <font
+        android:font="@font/sf_display_semibold"
+        android:fontStyle="normal"
+        android:fontWeight="600"
+
+        app:font="@font/sf_display_semibold"
+        app:fontStyle="normal"
+        app:fontWeight="600" />
+
+    <font
+        android:font="@font/sf_display_medium"
+        android:fontStyle="normal"
+        android:fontWeight="500"
+
+        app:font="@font/sf_display_medium"
+        app:fontStyle="normal"
+        app:fontWeight="500" />
+
+    <font
+        android:font="@font/sf_display_light"
+        android:fontStyle="normal"
+        android:fontWeight="400"
+
+        app:font="@font/sf_display_light"
+        app:fontStyle="normal"
+        app:fontWeight="400" />
+
+    <font
+        android:font="@font/sf_display_thin"
+        android:fontStyle="normal"
+        android:fontWeight="300"
+
+        app:font="@font/sf_display_thin"
+        app:fontStyle="normal"
+        app:fontWeight="300" />
+
+    <font
+        android:font="@font/sf_display_ultralight"
+        android:fontStyle="normal"
+        android:fontWeight="200"
+
+        app:font="@font/sf_display_ultralight"
+        app:fontStyle="normal"
+        app:fontWeight="200" />
+
+    <font
+        android:font="@font/sf_display_ultralight"
+        android:fontStyle="normal"
+        android:fontWeight="100"
+
+        app:font="@font/sf_display_ultralight"
+        app:fontStyle="normal"
+        app:fontWeight="100" />
+
+</font-family>

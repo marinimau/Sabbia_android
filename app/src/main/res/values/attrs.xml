@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<declare-styleable name="AppTheme">
+    <attr name="elevatedColor" format="color" />
+    <attr name="icons" format="color" />
+    <attr name="safeArea" format="color" />
+</declare-styleable>
