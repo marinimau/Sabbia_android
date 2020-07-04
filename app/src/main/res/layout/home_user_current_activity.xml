@@ -47,7 +47,7 @@
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight=".5"
-                        android:layout_marginBottom="10dp"
+                        android:layout_marginBottom="0dp"
                         android:minHeight="100dp"
                         tools:ignore="RtlSymmetry">
 
@@ -59,10 +59,12 @@
                             android:fontFamily="@font/sf_display_bold"
                             android:textColor="@android:color/white"
                             android:textSize="35sp"
-                            android:layout_marginTop="40dp"
+                            android:layout_alignTop="@id/social_distance_label"
+                            android:layout_marginTop="-50dp"
                             android:text="@string/home_current_activity_distance_num"
                             tools:ignore="RtlCompat" />
                         <TextView
+                            android:id="@+id/social_distance_label"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textAlignment="viewStart"
@@ -70,8 +72,7 @@
                             android:fontFamily="@font/sf_display_bold"
                             android:textColor="@android:color/white"
                             android:textSize="12sp"
-                            android:layout_marginBottom="-15dp"
-                            android:layout_alignBottom="@id/social_distance_tv"
+                            android:layout_alignParentBottom="true"
                             android:text="@string/home_current_activity_distance_label"
                             tools:ignore="RtlCompat" />
 

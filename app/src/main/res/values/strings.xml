@@ -21,4 +21,9 @@
     <!-- detail page -->
     <string name="detail_tab_text_1">Indici</string>
     <string name="detail_tab_text_2">Bacheca</string>
+    <!-- searchview -->
+    <string name="serchview_hint_text">Dove vorresti andare?</string>
+    <string name="serchview_hint_title">Non trovi ciò che cerchi?</string>
+    <string name="serchview_hint_description">Usa il nome della spiaggia per intero</string>
+    <string name="serchview_hint_button">Segnala spiaggia mancante</string>
 </resources>

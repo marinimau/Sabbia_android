@@ -15,6 +15,8 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.marinumau.sabbia.R;
 
+import java.util.Objects;
+
 public class SearchFragment extends Fragment {
 
     private SearchViewModel searchViewModel;
@@ -24,15 +26,15 @@ public class SearchFragment extends Fragment {
         searchViewModel =
                 ViewModelProviders.of(this).get(SearchViewModel.class);
         View root = inflater.inflate(R.layout.fragment_search, container, false);
-        final TextView textView = root.findViewById(R.id.text_dashboard);
+
         searchViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
-                textView.setText(s);
+
             }
         });
 
-        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("");
+        Objects.requireNonNull(((AppCompatActivity) Objects.requireNonNull(getActivity())).getSupportActionBar()).setTitle("");
 
 
         return root;

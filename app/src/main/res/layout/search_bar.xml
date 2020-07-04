@@ -15,6 +15,14 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        style="@style/BaseTheme.Card" />
+        style="@style/BaseTheme.Card">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_widget"
+            app:iconifiedByDefault="false"
+            app:queryHint="@string/serchview_hint_text"
+            style="@style/BaseTheme.MainAppBar.SearchWidget" />
+
+    </androidx.cardview.widget.CardView>
 
 </com.google.android.material.appbar.MaterialToolbar>
