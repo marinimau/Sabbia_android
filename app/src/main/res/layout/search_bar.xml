@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- search toolbar -->
+<com.google.android.material.appbar.MaterialToolbar
+    android:id="@+id/search_toolbar"
+    android:elevation="0dp"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    app:layout_collapseMode="parallax"
+    android:layout_width="match_parent"
+    android:visibility="gone"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        style="@style/BaseTheme.Card" />
+
+</com.google.android.material.appbar.MaterialToolbar>

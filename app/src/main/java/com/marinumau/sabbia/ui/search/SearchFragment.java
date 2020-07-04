@@ -1,4 +1,4 @@
-package com.marinumau.sabbia.ui.dashboard;
+package com.marinumau.sabbia.ui.search;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,28 +8,33 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.marinumau.sabbia.R;
 
-public class DashboardFragment extends Fragment {
+public class SearchFragment extends Fragment {
 
-    private DashboardViewModel dashboardViewModel;
+    private SearchViewModel searchViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        dashboardViewModel =
-                ViewModelProviders.of(this).get(DashboardViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_dashboard, container, false);
+        searchViewModel =
+                ViewModelProviders.of(this).get(SearchViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_search, container, false);
         final TextView textView = root.findViewById(R.id.text_dashboard);
-        dashboardViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        searchViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
             }
         });
+
+        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("");
+
+
         return root;
     }
 }

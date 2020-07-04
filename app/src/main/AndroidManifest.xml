@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/LightTheme">
         <activity
+            android:name=".BeachDetail"
+            android:label="@string/title_activity_beach_detail" />
+        <activity
             android:name=".MainActivity"
             android:configChanges="uiMode"
             android:label="@string/app_name">

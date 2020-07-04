@@ -24,10 +24,10 @@
     <color name="darkModeColorPrimary">#6200EE</color>
     <color name="darkModeColorPrimaryDark">#3700B3</color>
     <color name="darkModeColorAccent">#03DAC5</color>
-    <color name="darkModeColorBackground">#E1E1E1</color>
-    <color name="darkModeColorText">#000</color>
-    <color name="DarkModeColorIcons">#000</color>
-    <color name="darkModeColorElevated">#FFF</color>
+    <color name="darkModeColorBackground">#202020</color>
+    <color name="darkModeColorText">#ADADAD</color>
+    <color name="DarkModeColorIcons">#9FA2A4</color>
+    <color name="darkModeColorElevated">#252628</color>
     <!--
     ************************************************************************************************
     *                                                                                              *
@@ -35,6 +35,15 @@
     *                                                                                              *
     ************************************************************************************************
     -->
-    <color name="seaGradientStart">#037ADE</color>
-    <color name="seaGradientEnd">#03E5B7</color>
+    <color name="seaGradientStart">#0acffe</color>
+    <color name="seaGradientEnd">#495aff</color>
+    <!--
+    ************************************************************************************************
+    *                                                                                              *
+    *                                      ORANGE CORAL                                            *
+    *                                                                                              *
+    ************************************************************************************************
+    -->
+    <color name="orangeCoralGradientStart">#ff9966</color>
+    <color name="orangeCoralGradientEnd">#ff5e62</color>
 </resources>

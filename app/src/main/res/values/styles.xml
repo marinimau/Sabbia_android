@@ -94,7 +94,7 @@
     <style name="BaseTheme.MainAppBar.TitleText.Expanded" parent="BaseTheme.MainAppBar.TitleText">
         <item name="contentInsetStart">0dp</item>
         <item name="android:contentInsetStart">0dp</item>
-        <item name="android:textSize">30sp</item>
+        <item name="android:textSize">33sp</item>
     </style>
 
     <style name="BaseTheme.MainAppBar.TitleText.Collapsed" parent="BaseTheme.MainAppBar.TitleText">
@@ -195,13 +195,11 @@
         <item name="android:textSize">17sp</item>
     </style>
 
-    <style name="AppBottomSheetDialogTheme"
-        parent="Theme.Design.Light.BottomSheetDialog">
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
         <item name="bottomSheetStyle">@style/AppModalStyle</item>
     </style>
 
-    <style name="AppModalStyle"
-        parent="Widget.Design.BottomSheet.Modal">
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
         <item name="android:background">?attr/elevationOverlayColor</item>
         <item name="android:paddingBottom">0dp</item>
     </style>
@@ -209,4 +207,21 @@
     <style name="Collapsed">18dp</style>
 
     <style name="Expanded">30dp</style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

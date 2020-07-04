@@ -12,17 +12,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@android:color/transparent">
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:scaleType="fitXY"
-                android:layout_alignTop="@+id/root_container"
-                android:layout_alignBottom="@id/root_container"
-                android:layout_alignStart="@id/root_container"
-                android:layout_alignEnd="@id/root_container"
-                android:src="@drawable/bg_gradient_sea" />
+            android:background="@drawable/card_orange_coral_bg">
             
             <LinearLayout
                 android:id="@+id/root_container"
