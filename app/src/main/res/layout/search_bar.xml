@@ -2,10 +2,9 @@
 
 <!-- search toolbar -->
 <com.google.android.material.appbar.MaterialToolbar
+    android:layout_height="wrap_content"
     android:id="@+id/search_toolbar"
     android:elevation="0dp"
-    android:layout_height="wrap_content"
-    android:background="@android:color/transparent"
     app:layout_collapseMode="parallax"
     android:layout_width="match_parent"
     android:visibility="gone"
@@ -17,14 +16,15 @@
         android:layout_height="50dp"
         app:cardElevation="10dp"
         android:translationZ="0dp"
-        app:cardBackgroundColor="#ECECEC"
+        app:cardBackgroundColor="?attr/elevationOverlayColor"
         style="@style/BaseTheme.Card">
 
         <androidx.appcompat.widget.SearchView
             android:id="@+id/search_widget"
             app:iconifiedByDefault="false"
             app:queryHint="@string/serchview_hint_text"
-            style="@style/BaseTheme.MainAppBar.SearchWidget" />
+            android:theme="@style/BaseTheme.SearchWidget"
+            style="@style/BaseTheme.SearchWidget" />
 
     </androidx.cardview.widget.CardView>
 

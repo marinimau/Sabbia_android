@@ -41,12 +41,16 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:statusBarColor">@color/colorElevated</item>
+        <item name="titleTextColor">@color/colorText</item>
+        <item name="hintTextColor">@color/colorTextHint</item>
+        <item name="editTextColor">@color/colorText</item>
         <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/colorBackground</item>
         <item name="android:textColor">@color/colorText</item>
         <item name="backgroundColor">@color/colorBackground</item>
         <item name="cardBackgroundColor">@color/colorElevated</item>
         <item name="icons">@color/colorIcons</item>
+        <item name="iconsActive">@color/colorIconsActive</item>
         <item name="elevationOverlayColor">@color/colorElevated</item>
     </style>
     <!--
@@ -61,12 +65,16 @@
         <item name="colorPrimary">@color/darkModeColorPrimary</item>
         <item name="colorPrimaryDark">@color/darkModeColorPrimaryDark</item>
         <item name="colorAccent">@color/darkModeColorAccent</item>
-        <item name="android:statusBarColor">@color/darkModeColorText</item>
+        <item name="titleTextColor">@color/darkModeColorText</item>
+        <item name="hintTextColor">@color/darkModeColorTextHint</item>
+        <item name="editTextColor">@color/darkModeColorText</item>
         <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">@color/darkModeColorBackground</item>
         <item name="android:textColor">@color/darkModeColorText</item>
         <item name="backgroundColor">@color/darkModeColorBackground</item>
         <item name="cardBackgroundColor">@color/darkModeColorElevated</item>
-        <item name="icons">@color/DarkModeColorIcons</item>
+        <item name="icons">@color/darkModeColorIcons</item>
+        <item name="iconsActive">@color/darkModeColorIconsActive</item>
         <item name="elevationOverlayColor">@color/darkModeColorElevated</item>
     </style>
     <!--
@@ -80,7 +88,7 @@
         <item name="android:titleTextStyle">@style/BaseTheme.MainAppBar.TitleText</item>
         <item name="titleTextStyle">@style/BaseTheme.MainAppBar.TitleText</item>
         <item name="android:paddingRight">3dp</item>
-        <item name="android:background">?attr/elevationOverlayColor</item>
+        <item name="android:background">?attr/backgroundColor</item>
         <item name="android:homeAsUpIndicator">@drawable/ic_back</item>
     </style>
 
@@ -88,6 +96,7 @@
         <item name="android:textSize">24sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:fontFamily">@font/sf_display_heavy</item>
+        <item name="android:textColor">?attr/titleTextColor</item>
         <item name="android:background">@android:color/transparent</item>
     </style>
 
@@ -100,14 +109,25 @@
     <style name="BaseTheme.MainAppBar.TitleText.Collapsed" parent="BaseTheme.MainAppBar.TitleText">
         <item name="android:textSize">24sp</item>
     </style>
-
-    <style name="BaseTheme.MainAppBar.SearchWidget" parent="Widget.AppCompat.SearchView">
+    <!--
+    ************************************************************************************************
+    *                                                                                              *
+    *                                      SEARCH WIDGET                                           *
+    *                                                                                              *
+    ************************************************************************************************
+    -->
+    <style name="BaseTheme.SearchWidget" parent="Widget.AppCompat.SearchView">
         <item name="android:layout_margin">0dp</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">55dp</item>
         <item name="android:paddingLeft">6dp</item>
         <item name="android:paddingRight">6dp</item>
+        <item name="fontFamily">@font/sf_display_medium</item>
         <item name="queryBackground">@android:color/transparent</item>
+        <item name="android:editTextColor">?attr/editTextColor</item>
+        <item name="android:textColorHint">?attr/hintTextColor</item>
+        <item name="searchIcon">@drawable/ic_search</item>
+        <item name="closeIcon">@drawable/ic_clear</item>
     </style>
 
     <!--

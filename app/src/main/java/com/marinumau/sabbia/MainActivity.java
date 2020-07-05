@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 
+import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -27,6 +28,7 @@ import static androidx.core.content.ContextCompat.getSystemService;
 
 public class MainActivity extends SabbiaActivity {
 
+    AppBarLayout appBarLayout;
     MaterialToolbar toolbar;
     MaterialToolbar searchToolbar;
     NavController navController;
@@ -41,6 +43,7 @@ public class MainActivity extends SabbiaActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
 
         initActionBar();
@@ -52,6 +55,7 @@ public class MainActivity extends SabbiaActivity {
      *
      */
     private void initActionBar() {
+        appBarLayout = (AppBarLayout) findViewById(R.id.appbar_layout);
         toolbar = (MaterialToolbar) findViewById(R.id.toolbar);
         searchToolbar = (MaterialToolbar) findViewById(R.id.search_toolbar);
         searchView = (SearchView) findViewById(R.id.search_widget);
@@ -85,12 +89,14 @@ public class MainActivity extends SabbiaActivity {
                     toolbar.setVisibility(View.GONE);
                     searchToolbar.setVisibility(View.VISIBLE);
                     collapsingToolbarLayout.setTitle("");
+                    appBarLayout.setExpanded(false);
                     SoftKeyBoardManager.showKeyboardFrom(MainActivity.this, searchToolbar);
                     searchView.requestFocus();
                     Objects.requireNonNull(getSupportActionBar()).setTitle("");
                 } else {
                     toolbar.setVisibility(View.VISIBLE);
                     searchToolbar.setVisibility(View.GONE);
+                    appBarLayout.setExpanded(true);
                     SoftKeyBoardManager.hideKeyboardFrom(MainActivity.this, searchToolbar);
                 }
             }

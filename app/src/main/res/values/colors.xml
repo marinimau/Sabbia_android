@@ -12,6 +12,8 @@
     <color name="colorAccent">#03DAC5</color>
     <color name="colorBackground">#FFFFFF</color>
     <color name="colorText">#000</color>
+    <color name="colorTextHint">#85000000</color>
+    <color name="colorIconsActive">#000</color>
     <color name="colorIcons">#7A7A7A</color>
     <color name="colorElevated">#FFF</color>
     <!--
@@ -25,8 +27,10 @@
     <color name="darkModeColorPrimaryDark">#3700B3</color>
     <color name="darkModeColorAccent">#03DAC5</color>
     <color name="darkModeColorBackground">#202020</color>
-    <color name="darkModeColorText">#ADADAD</color>
-    <color name="DarkModeColorIcons">#9FA2A4</color>
+    <color name="darkModeColorText">#EFEFEF</color>
+    <color name="darkModeColorTextHint">#85ADADAD</color>
+    <color name="darkModeColorIconsActive">#E1E1E1</color>
+    <color name="darkModeColorIcons">#6A6A6A</color>
     <color name="darkModeColorElevated">#252628</color>
     <!--
     ************************************************************************************************

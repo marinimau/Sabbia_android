@@ -19,7 +19,7 @@ public abstract class SabbiaActivity extends AppCompatActivity {
 
     /**
      *
-     * @param savedInstanceState
+     * @param savedInstanceState the saved instance
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +36,7 @@ public abstract class SabbiaActivity extends AppCompatActivity {
         configuration.setToDefaults();
 
         int currentNightMode = configuration.uiMode & Configuration.UI_MODE_NIGHT_MASK;
+
         switch (currentNightMode) {
             case Configuration.UI_MODE_NIGHT_NO:
                 setTheme(R.style.LightTheme);

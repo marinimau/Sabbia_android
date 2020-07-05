@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/appbar_layout"
     android:layout_width="match_parent"
     android:layout_height="@dimen/tall_toolbar_height"
     style="@style/BaseTheme.MainAppBar"
@@ -13,8 +14,8 @@
         app:expandedTitleMarginBottom="5dp"
         app:expandedTitleMarginStart="30dp"
         app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
-        app:contentScrim="?attr/elevationOverlayColor"
-        app:statusBarScrim="?attr/elevationOverlayColor"
+        app:contentScrim="?attr/backgroundColor"
+        app:statusBarScrim="?attr/backgroundColor"
         app:expandedTitleTextAppearance="@style/BaseTheme.MainAppBar.TitleText.Expanded">
 
         <com.google.android.material.appbar.MaterialToolbar

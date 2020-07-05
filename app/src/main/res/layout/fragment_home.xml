@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:paddingBottom="30dp"
-    android:background="?attr/elevationOverlayColor"
+    android:background="@android:color/transparent"
     tools:context=".ui.home.HomeFragment">
 
     <!-- user last activity -->
