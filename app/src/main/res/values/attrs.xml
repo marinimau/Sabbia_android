@@ -6,4 +6,5 @@
     <attr name="safeArea" format="color" />
     <attr name="text" format="color" />
     <attr name="textHint" format="color" />
+    <attr name="searchBg" format="color" />
 </declare-styleable>

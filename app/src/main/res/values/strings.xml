@@ -22,6 +22,9 @@
     <string name="detail_title_placeholder">Nome spiaggia</string>
     <string name="detail_tab_text_1">Indici</string>
     <string name="detail_tab_text_2">Bacheca</string>
+    <!-- search tab -->
+    <string name="search_rated">Spiagge consigliate</string>
+    <string name="search_clean">Recensiti di recente</string>
     <!-- searchview -->
     <string name="serchview_hint_text">Dove vorresti andare?</string>
     <string name="serchview_hint_title">Non trovi ciò che cerchi?</string>

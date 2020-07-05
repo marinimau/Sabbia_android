@@ -49,7 +49,7 @@ public class HomeFragment extends Fragment {
         RecyclerView recyclerView = root.findViewById(R.id.menuGrid);
         int numberOfColumns = 2;
         recyclerView.setLayoutManager(new GridLayoutManager(getActivity(), numberOfColumns));
-        BeachAdapter adapter = new BeachAdapter(getActivity(), Objects.requireNonNull(getActivity()).getApplicationContext(), beachFactory.getBeachList());
+        BeachAdapter adapter = new BeachAdapter(getActivity(), Objects.requireNonNull(getActivity()).getApplicationContext(), beachFactory.getBeachList(), 3);
         recyclerView.setAdapter(adapter);
     }
 }

@@ -25,9 +25,6 @@
             app:layout_collapseMode="pin"
             android:layout_width="match_parent" />
 
-        <!-- searchbar -->
-        <include layout="@layout/search_bar" />
-
     </com.google.android.material.appbar.CollapsingToolbarLayout>
 
 </com.google.android.material.appbar.AppBarLayout>

@@ -1,9 +1,7 @@
 package com.marinumau.sabbia;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
-import android.view.inputmethod.InputMethodManager;
 
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
@@ -13,9 +11,7 @@ import com.marinumau.sabbia.utils.SoftKeyBoardManager;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
-import androidx.appcompat.widget.Toolbar;
 import androidx.navigation.NavController;
 import androidx.navigation.NavDestination;
 import androidx.navigation.Navigation;
@@ -24,17 +20,13 @@ import androidx.navigation.ui.NavigationUI;
 
 import java.util.Objects;
 
-import static androidx.core.content.ContextCompat.getSystemService;
-
 public class MainActivity extends SabbiaActivity {
 
     AppBarLayout appBarLayout;
     MaterialToolbar toolbar;
-    MaterialToolbar searchToolbar;
     NavController navController;
     BottomNavigationView navView;
     CollapsingToolbarLayout collapsingToolbarLayout;
-    SearchView searchView;
 
     /**
      *
@@ -48,17 +40,15 @@ public class MainActivity extends SabbiaActivity {
 
         initActionBar();
         initNavigation();
-        evaluateToolbar();
+        fixBack();
     }
 
     /**
      *
      */
     private void initActionBar() {
-        appBarLayout = (AppBarLayout) findViewById(R.id.appbar_layout);
         toolbar = (MaterialToolbar) findViewById(R.id.toolbar);
-        searchToolbar = (MaterialToolbar) findViewById(R.id.search_toolbar);
-        searchView = (SearchView) findViewById(R.id.search_widget);
+        appBarLayout = (AppBarLayout) findViewById(R.id.appbar_layout);
         setSupportActionBar(toolbar);
     }
 
@@ -81,24 +71,15 @@ public class MainActivity extends SabbiaActivity {
     /**
      *
      */
-    private void evaluateToolbar(){
+    private void fixBack(){
         navController.addOnDestinationChangedListener(new NavController.OnDestinationChangedListener() {
             @Override
             public void onDestinationChanged(@NonNull NavController controller, @NonNull NavDestination destination, @Nullable Bundle arguments) {
                 if(destination.getId() == R.id.navigation_search) {
-                    toolbar.setVisibility(View.GONE);
-                    searchToolbar.setVisibility(View.VISIBLE);
-                    collapsingToolbarLayout.setTitle("");
-                    appBarLayout.setExpanded(false);
-                    SoftKeyBoardManager.showKeyboardFrom(MainActivity.this, searchToolbar);
-                    searchView.requestFocus();
-                    Objects.requireNonNull(getSupportActionBar()).setTitle("");
-                } else {
-                    toolbar.setVisibility(View.VISIBLE);
-                    searchToolbar.setVisibility(View.GONE);
-                    appBarLayout.setExpanded(true);
-                    SoftKeyBoardManager.hideKeyboardFrom(MainActivity.this, searchToolbar);
+                    Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(false);
+                    getSupportActionBar().setDisplayShowHomeEnabled(false);
                 }
+                appBarLayout.setExpanded(true);
             }
 
         });

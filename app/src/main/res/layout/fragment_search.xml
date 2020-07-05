@@ -6,7 +6,51 @@
     android:layout_height="match_parent"
     tools:context=".ui.search.SearchFragment">
 
-    <!-- search palceholder -->
-    <include layout="@layout/search_no_result_placeholder" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <!-- search button -->
+        <include layout="@layout/search_button" />
+
+        <!-- consigliati -->
+        <TextView
+            style="@style/BaseTheme.Label"
+            android:layout_marginBottom="0dp"
+            android:text="@string/search_rated" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/promoted_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="1"
+            android:paddingStart="0dp"
+            android:orientation="horizontal"
+            android:paddingEnd="0dp"
+            android:paddingBottom="36dp" />
+
+        <!-- recenti -->
+        <TextView
+            style="@style/BaseTheme.Label"
+            android:layout_marginBottom="0dp"
+            android:text="@string/search_clean" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/last_update_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="1"
+            android:paddingStart="12dp"
+            android:orientation="horizontal"
+            android:paddingEnd="12dp"
+            android:paddingBottom="36dp"
+            />
+
+    </LinearLayout>
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

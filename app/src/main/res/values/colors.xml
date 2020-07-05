@@ -16,6 +16,7 @@
     <color name="colorIconsActive">#000</color>
     <color name="colorIcons">#7A7A7A</color>
     <color name="colorElevated">#FFF</color>
+    <color name="searchBgColor">#DCDCDC</color>
     <!--
     ************************************************************************************************
     *                                                                                              *
@@ -32,6 +33,7 @@
     <color name="darkModeColorIconsActive">#E1E1E1</color>
     <color name="darkModeColorIcons">#808080</color>
     <color name="darkModeColorElevated">#252628</color>
+    <color name="darkModeSearchBgColor">#3A3A3A</color>
     <!--
     ************************************************************************************************
     *                                                                                              *
@@ -50,4 +52,13 @@
     -->
     <color name="orangeCoralGradientStart">#ff9966</color>
     <color name="orangeCoralGradientEnd">#ff5e62</color>
+    <!--
+    ************************************************************************************************
+    *                                                                                              *
+    *                                       GREEN WAVE                                             *
+    *                                                                                              *
+    ************************************************************************************************
+    -->
+    <color name="greenGradientStart">#98DE5B</color>
+    <color name="greenGradientEnd">#08E1AE</color>
 </resources>

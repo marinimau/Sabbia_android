@@ -52,6 +52,7 @@
         <item name="titleTextColor">@color/colorText</item>
         <item name="hintTextColor">@color/colorTextHint</item>
         <item name="editTextColor">@color/colorText</item>
+        <item name="searchBg">@color/searchBgColor</item>
         <item name="android:windowLightStatusBar">true</item>
         <item name="android:statusBarColor">@color/colorBackground</item>
         <item name="android:textColor">@color/colorText</item>
@@ -76,6 +77,7 @@
         <item name="titleTextColor">@color/darkModeColorText</item>
         <item name="hintTextColor">@color/darkModeColorTextHint</item>
         <item name="editTextColor">@color/darkModeColorText</item>
+        <item name="searchBg">@color/darkModeSearchBgColor</item>
         <item name="android:windowLightStatusBar">false</item>
         <item name="android:statusBarColor">@color/darkModeColorBackground</item>
         <item name="android:textColor">@color/darkModeColorText</item>

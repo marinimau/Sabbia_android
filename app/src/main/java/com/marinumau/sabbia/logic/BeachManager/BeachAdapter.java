@@ -18,7 +18,6 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
-import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.marinumau.sabbia.BeachDetail;
@@ -33,6 +32,7 @@ public class BeachAdapter extends RecyclerView.Adapter<BeachAdapter.ViewHolder>{
     private BeachAdapter.ItemClickListener mClickListener;
     private Context context;
     private Activity activity;
+    private int type;
 
     /**
      * @param activity the calling activity
@@ -43,6 +43,20 @@ public class BeachAdapter extends RecyclerView.Adapter<BeachAdapter.ViewHolder>{
         this.beachItems = data;
         this.context = context;
         this.activity = activity;
+        this.type = 0;
+    }
+
+    /**
+     * @param activity the calling activity
+     * @param context the calling activity context
+     * @param data the data to inflate
+     * @param type the type of the view required */
+    public BeachAdapter(Activity activity, Context context, ArrayList<Beach> data, int type) {
+        this.mInflater = LayoutInflater.from(context);
+        this.beachItems = data;
+        this.context = context;
+        this.activity = activity;
+        this.type = type;
     }
 
     /**
@@ -54,7 +68,18 @@ public class BeachAdapter extends RecyclerView.Adapter<BeachAdapter.ViewHolder>{
     @Override
     @NonNull
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = mInflater.inflate(R.layout.home_activity_history_item, parent, false);
+        View view;
+        switch (this.type){
+            case 0:
+                view = mInflater.inflate(R.layout.last_updated_beach_item, parent, false);
+                break;
+            case 1:
+                view = mInflater.inflate(R.layout.promoted_beach_item, parent, false);
+                break;
+            default:
+                view = mInflater.inflate(R.layout.home_activity_history_item, parent, false);
+        }
+
         return new ViewHolder(view);
     }
 
