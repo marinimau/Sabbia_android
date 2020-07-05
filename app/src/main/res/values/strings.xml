@@ -19,6 +19,7 @@
     <string name="home_current_activity_parking">Gratuito</string>
     <string name="title_activity_beach_detail">BeachDetail</string>
     <!-- detail page -->
+    <string name="detail_title_placeholder">Nome spiaggia</string>
     <string name="detail_tab_text_1">Indici</string>
     <string name="detail_tab_text_2">Bacheca</string>
     <!-- searchview -->

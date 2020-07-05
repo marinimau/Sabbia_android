@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_container"
     style="@style/BaseTheme.Card"
-    android:layout_margin="12dp">
+    android:clickable="true"
+    android:layout_margin="12dp"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground">
 
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:minHeight="100dp"
-        android:background="@drawable/card_sea_bg">
+        android:minHeight="100dp">
 
         <LinearLayout
             android:id="@+id/root_container"
@@ -18,7 +21,8 @@
             android:layout_alignParentBottom="true"
             android:gravity="bottom|end"
             android:padding="20dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="@drawable/card_sea_bg">
 
             <TextView
                 android:id="@+id/title"

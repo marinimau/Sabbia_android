@@ -22,12 +22,20 @@
         <item name="android:actionBarStyle">@style/BaseTheme.MainAppBar</item>
         <item name="actionBarStyle">@style/BaseTheme.MainAppBar</item>
         <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
-        <item name="android:windowActivityTransitions">true</item>
         <item name="cardCornerRadius">20dp</item>
         <item name="android:navigationBarColor">@android:color/black</item>
+        <!-- enable window content transitions -->
+        <item name="android:windowActivityTransitions">true</item>
         <!-- specify enter and exit transitions -->
-        <!--<item name="android:windowEnterTransition">@transition/fade</item>-->
-        <!--<item name="android:windowExitTransition">@transition/fade</item>-->
+        <item name="android:windowEnterTransition">@transition/explode</item>
+        <item name="android:windowExitTransition">@transition/explode</item>
+        <!-- specify shared element transitions -->
+        <item name="android:windowSharedElementEnterTransition">
+            @transition/change_image_transform</item>
+        <item name="android:windowSharedElementExitTransition">
+            @transition/change_image_transform</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_back</item>
+
     </style>
     <!--
     ************************************************************************************************
@@ -108,6 +116,32 @@
 
     <style name="BaseTheme.MainAppBar.TitleText.Collapsed" parent="BaseTheme.MainAppBar.TitleText">
         <item name="android:textSize">24sp</item>
+    </style>
+    <!--
+    ************************************************************************************************
+    *                                                                                              *
+    *                                      APPBAR DETAIL                                           *
+    *                                                                                              *
+    ************************************************************************************************
+    -->
+    <style name="BaseTheme.MainAppBar.TitleText.Detail.Expanded" parent="BaseTheme.MainAppBar.TitleText">
+        <item name="contentInsetStart">0dp</item>
+        <item name="android:contentInsetStart">0dp</item>
+        <item name="android:textSize">33sp</item>
+        <item name="android:paddingBottom">73dp</item>
+    </style>
+
+    <style name="BaseTheme.MainAppBar.TitleText.Detail.Collapsed" parent="BaseTheme.MainAppBar.TitleText">
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_gravity">top</item>
+        <item name="android:paddingBottom">73dp</item>
+    </style>
+
+    <style name="BaseTheme.TabTitle" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/sf_display_semibold</item>
     </style>
     <!--
     ************************************************************************************************
@@ -226,20 +260,5 @@
 
     <style name="Expanded">30dp</style>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-    </style>
 
-    <style name="AppTheme.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
-
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

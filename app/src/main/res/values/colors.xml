@@ -30,7 +30,7 @@
     <color name="darkModeColorText">#EFEFEF</color>
     <color name="darkModeColorTextHint">#85ADADAD</color>
     <color name="darkModeColorIconsActive">#E1E1E1</color>
-    <color name="darkModeColorIcons">#6A6A6A</color>
+    <color name="darkModeColorIcons">#808080</color>
     <color name="darkModeColorElevated">#252628</color>
     <!--
     ************************************************************************************************

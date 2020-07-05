@@ -7,17 +7,22 @@
 
 package com.marinumau.sabbia.logic.BeachManager;
 
+import android.app.Activity;
+import android.app.ActivityOptions;
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
+import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.marinumau.sabbia.BeachDetail;
 import com.marinumau.sabbia.R;
-import com.marinumau.sabbia.ui.home.HomeFragment;
 
 import java.util.ArrayList;
 
@@ -27,14 +32,17 @@ public class BeachAdapter extends RecyclerView.Adapter<BeachAdapter.ViewHolder>{
     private LayoutInflater mInflater;
     private BeachAdapter.ItemClickListener mClickListener;
     private Context context;
+    private Activity activity;
 
     /**
-     *  @param context the calling activity context
+     * @param activity the calling activity
+     * @param context the calling activity context
      * @param data the data to inflate*/
-    public BeachAdapter(Context context, ArrayList<Beach> data) {
+    public BeachAdapter(Activity activity, Context context, ArrayList<Beach> data) {
         this.mInflater = LayoutInflater.from(context);
         this.beachItems = data;
         this.context = context;
+        this.activity = activity;
     }
 
     /**
@@ -56,9 +64,26 @@ public class BeachAdapter extends RecyclerView.Adapter<BeachAdapter.ViewHolder>{
      * @param position the current position
      */
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.title.setText(beachItems.get(position).name);
-        holder.subtitle.setText(beachItems.get(position).location);
+    public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
+        holder.title.setText(beachItems.get(position).getName());
+        holder.subtitle.setText(beachItems.get(position).getLocation());
+
+        holder.container.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showDetails(beachItems.get(position).getId(), view);
+            }
+        });
+    }
+
+    /**
+     *
+     * @param id the id of the beach
+     */
+    private void showDetails(int id, View view) {
+        Intent myIntent = new Intent(activity, BeachDetail.class);
+        myIntent.putExtra("beach_id", id);
+        activity.startActivity(myIntent, ActivityOptions.makeSceneTransitionAnimation(activity).toBundle());
     }
 
     /**
@@ -74,11 +99,13 @@ public class BeachAdapter extends RecyclerView.Adapter<BeachAdapter.ViewHolder>{
      *
      */
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+        CardView container;
         TextView title;
         TextView subtitle;
 
         ViewHolder(View itemView) {
             super(itemView);
+            container = itemView.findViewById(R.id.card_container);
             title = itemView.findViewById(R.id.title);
             subtitle = itemView.findViewById(R.id.subtitle);
             itemView.setOnClickListener(this);

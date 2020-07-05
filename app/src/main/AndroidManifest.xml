@@ -11,7 +11,8 @@
         android:theme="@style/LightTheme">
         <activity
             android:name=".BeachDetail"
-            android:label="@string/title_activity_beach_detail" />
+            android:label="@string/title_activity_beach_detail"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".MainActivity"
             android:configChanges="uiMode"

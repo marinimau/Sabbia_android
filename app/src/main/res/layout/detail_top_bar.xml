@@ -10,23 +10,22 @@
         android:id="@+id/collapsing_toolbar_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:collapsedTitleTextAppearance="@style/BaseTheme.MainAppBar.TitleText.Collapsed"
-        app:expandedTitleMarginBottom="5dp"
+        app:collapsedTitleTextAppearance="@style/BaseTheme.MainAppBar.TitleText.Detail.Collapsed"
+        app:expandedTitleMarginBottom="8dp"
         app:expandedTitleMarginStart="30dp"
-        app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
         app:contentScrim="?attr/backgroundColor"
         app:statusBarScrim="?attr/backgroundColor"
-        app:expandedTitleTextAppearance="@style/BaseTheme.MainAppBar.TitleText.Expanded">
+        app:expandedTitleTextAppearance="@style/BaseTheme.MainAppBar.TitleText.Detail.Expanded"
+        android:fitsSystemWindows="true">
 
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"
             android:elevation="0dp"
             android:layout_height="55dp"
+            app:title="@string/detail_title_placeholder"
             app:layout_collapseMode="pin"
             android:layout_width="match_parent" />
-
-        <!-- searchbar -->
-        <include layout="@layout/search_bar" />
 
     </com.google.android.material.appbar.CollapsingToolbarLayout>
 
