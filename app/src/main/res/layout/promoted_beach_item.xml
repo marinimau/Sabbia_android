@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/card_container"
     style="@style/BaseTheme.Card"
     android:clickable="true"
-    android:layout_margin="12dp"
     android:focusable="true"
-    android:layout_width="250dp"
+    android:layout_width="230dp"
+    app:cardUseCompatPadding="true"
+    android:layout_margin="0dp"
+    android:layout_height="130dp"
     android:foreground="?android:attr/selectableItemBackground">
 
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:minHeight="100dp">
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:id="@+id/root_container"
@@ -31,7 +32,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@android:color/white"
                 android:fontFamily="@font/sf_display_bold"
-                android:textSize="22sp"
+                android:textSize="16sp"
                 android:textAlignment="viewEnd"
                 android:text="@string/item_title" />
 
@@ -41,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@android:color/white"
                 android:fontFamily="@font/sf_display_medium"
-                android:textSize="16sp"
+                android:textSize="12sp"
                 android:textAlignment="viewEnd"
                 android:text="@string/item_subtitle" />
 

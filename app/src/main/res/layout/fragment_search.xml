@@ -20,21 +20,24 @@
         <TextView
             style="@style/BaseTheme.Label"
             android:layout_marginBottom="0dp"
+            android:layout_marginTop="10dp"
             android:text="@string/search_rated" />
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/promoted_rv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:numColumns="1"
-            android:paddingStart="0dp"
+            android:padding="0dp"
+            android:clipToPadding = "false"
+            android:paddingStart="14dp"
             android:orientation="horizontal"
-            android:paddingEnd="0dp"
-            android:paddingBottom="36dp" />
+            tools:ignore="RtlSymmetry" />
 
         <!-- recenti -->
         <TextView
             style="@style/BaseTheme.Label"
             android:layout_marginBottom="0dp"
+            android:layout_marginTop="20dp"
             android:text="@string/search_clean" />
 
         <androidx.recyclerview.widget.RecyclerView
@@ -42,9 +45,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:numColumns="1"
-            android:paddingStart="12dp"
+            android:paddingTop="0dp"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
             android:orientation="horizontal"
-            android:paddingEnd="12dp"
             android:paddingBottom="36dp"
             />
 

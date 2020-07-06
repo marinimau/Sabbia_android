@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:id="@+id/search_btn"
     android:layout_marginTop="20dp"
-    android:layout_height="50dp"
+    android:layout_marginBottom="0dp"
+    android:layout_height="40dp"
     app:cardElevation="0dp"
     android:translationZ="0dp"
     app:cardBackgroundColor="?attr/searchBg"
@@ -16,10 +18,10 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp">
+        android:layout_height="40dp">
         <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
             android:layout_centerVertical="true"
             android:layout_marginStart="20dp"
             android:src="@drawable/ic_search" />
@@ -29,8 +31,8 @@
             android:fontFamily="@font/sf_display_medium"
             android:textColor="?attr/hintTextColor"
             android:layout_centerVertical="true"
-            android:textSize="18sp"
-            android:layout_marginStart="65dp"
+            android:textSize="16sp"
+            android:layout_marginStart="55dp"
             android:text="@string/serchview_hint_text"/>
     </RelativeLayout>
 

@@ -30,4 +30,6 @@
     <string name="serchview_hint_title">Non trovi ciò che cerchi?</string>
     <string name="serchview_hint_description">Usa il nome della spiaggia per intero</string>
     <string name="serchview_hint_button">Segnala spiaggia mancante</string>
+    <!-- search active -->
+    <string name="title_activity_beach_active"> </string>
 </resources>
