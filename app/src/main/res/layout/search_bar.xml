@@ -26,6 +26,7 @@
             app:iconifiedByDefault="false"
             android:paddingStart="0dp"
             android:paddingEnd="0dp"
+            app:searchIcon="@null"
             app:queryHint="@string/serchview_hint_text" />
 
     </com.google.android.material.appbar.MaterialToolbar>
