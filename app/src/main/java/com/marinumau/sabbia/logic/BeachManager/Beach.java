@@ -12,6 +12,7 @@ public class Beach {
     private int id;
     private String name;
     private String location;
+    private String imgUrl;
 
     /**
      *
@@ -23,11 +24,13 @@ public class Beach {
      * @param id the beach id
      * @param name the name of the beach
      * @param location the location of the beach
+     * @param imgUrl the img url of the beach
      */
-    public Beach(int id, String name, String location) {
+    public Beach(int id, String name, String location, String imgUrl) {
         this.id = id;
         this.name = name;
         this.location = location;
+        this.imgUrl = imgUrl;
     }
 
     /**
@@ -76,5 +79,21 @@ public class Beach {
      */
     public void setLocation(String location) {
         this.location = location;
+    }
+
+    /**
+     *
+     * @return the img url of the beach
+     */
+    public String getImgUrl() {
+        return imgUrl;
+    }
+
+    /**
+     *
+     * @param imgUrl the img url for the beach
+     */
+    public void setImgUri(String imgUrl) {
+        this.imgUrl = imgUrl;
     }
 }

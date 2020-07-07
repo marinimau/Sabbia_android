@@ -13,6 +13,14 @@
         android:layout_width="match_parent"
         android:layout_height="150dp">
 
+        <ImageView
+            android:id="@+id/card_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_placeholder"
+            android:contentDescription="@string/beach_image" />
+
         <LinearLayout
             android:id="@+id/root_container"
             android:layout_width="match_parent"

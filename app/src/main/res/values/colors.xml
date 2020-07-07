@@ -41,8 +41,8 @@
     *                                                                                              *
     ************************************************************************************************
     -->
-    <color name="seaGradientStart">#80CED7</color>
-    <color name="seaGradientEnd">#007EA7</color>
+    <color name="seaGradientStart">#2F191919</color>
+    <color name="seaGradientEnd">#00007EA7</color>
     <!--
     ************************************************************************************************
     *                                                                                              *
@@ -59,6 +59,6 @@
     *                                                                                              *
     ************************************************************************************************
     -->
-    <color name="greenGradientStart">#98DE5B</color>
-    <color name="greenGradientEnd">#08E1AE</color>
+    <color name="greenGradientStart">#0098DE5B</color>
+    <color name="greenGradientEnd">#4D131313</color>
 </resources>

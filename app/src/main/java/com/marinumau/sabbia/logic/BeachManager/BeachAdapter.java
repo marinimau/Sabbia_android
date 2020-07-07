@@ -14,12 +14,14 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.marinumau.sabbia.BeachDetail;
 import com.marinumau.sabbia.R;
 
@@ -92,6 +94,7 @@ public class BeachAdapter extends RecyclerView.Adapter<BeachAdapter.ViewHolder>{
     public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
         holder.title.setText(beachItems.get(position).getName());
         holder.subtitle.setText(beachItems.get(position).getLocation());
+        loadImage(holder, position);
 
         holder.container.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -99,6 +102,21 @@ public class BeachAdapter extends RecyclerView.Adapter<BeachAdapter.ViewHolder>{
                 showDetails(beachItems.get(position).getId(), view);
             }
         });
+    }
+
+    /**
+     *
+     * @param holder the view holder
+     * @param position the current position
+     */
+    private void loadImage(@NonNull ViewHolder holder, final int position){
+        if (beachItems.get(position).getImgUrl() != null){
+            Glide.with(activity)
+                    .load(beachItems.get(position).getImgUrl())
+                    .centerCrop()
+                    .placeholder(R.drawable.img_placeholder)
+                    .into(holder.cardImg);
+        }
     }
 
     /**
@@ -127,12 +145,14 @@ public class BeachAdapter extends RecyclerView.Adapter<BeachAdapter.ViewHolder>{
         CardView container;
         TextView title;
         TextView subtitle;
+        ImageView cardImg;
 
         ViewHolder(View itemView) {
             super(itemView);
             container = itemView.findViewById(R.id.card_container);
             title = itemView.findViewById(R.id.title);
             subtitle = itemView.findViewById(R.id.subtitle);
+            cardImg = itemView.findViewById(R.id.card_img);
             itemView.setOnClickListener(this);
         }
 
