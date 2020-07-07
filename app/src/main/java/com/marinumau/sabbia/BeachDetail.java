@@ -1,7 +1,9 @@
 package com.marinumau.sabbia;
 
+import android.content.Intent;
 import android.os.Bundle;
 
+import com.bumptech.glide.Glide;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -13,7 +15,10 @@ import androidx.core.widget.NestedScrollView;
 import androidx.viewpager.widget.ViewPager;
 
 import android.view.View;
+import android.widget.ImageView;
 
+import com.marinumau.sabbia.logic.BeachManager.Beach;
+import com.marinumau.sabbia.logic.BeachManager.BeachFactory;
 import com.marinumau.sabbia.ui.detail.SectionsPagerAdapter;
 
 import java.util.Objects;
@@ -22,6 +27,7 @@ public class BeachDetail extends SabbiaActivity {
 
     AppBarLayout appBarLayout;
     Toolbar toolbar;
+    ImageView headerImage;
 
 
     /**
@@ -37,6 +43,7 @@ public class BeachDetail extends SabbiaActivity {
         initTabs();
         initFab();
         fixViewPagerInsideScrollView();
+        setHeaderContents();
 
     }
 
@@ -46,6 +53,7 @@ public class BeachDetail extends SabbiaActivity {
     private void initActionBar() {
         appBarLayout = (AppBarLayout) findViewById(R.id.appbar_layout);
         toolbar = (MaterialToolbar) findViewById(R.id.toolbar);
+        headerImage = (ImageView) findViewById(R.id.header_image);
         setSupportActionBar(toolbar);
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
@@ -83,5 +91,32 @@ public class BeachDetail extends SabbiaActivity {
                         .setAction("Action", null).show();
             }
         });
+    }
+
+    /**
+     *
+     */
+    private void setHeaderContents(){
+        BeachFactory beachFactory = BeachFactory.getInstance();
+        Intent intent = getIntent();
+        int beachId = intent.getIntExtra("beach_id", -1);
+
+        if(beachId >= 0){
+            Beach currentBeach = beachFactory.getBeachById(beachId);
+            toolbar.setTitle(currentBeach.getName());
+            setHeaderImage(currentBeach.getImgUrl());
+        }
+    }
+
+    /**
+     *
+     * @param uri the header image uri
+     */
+    private void setHeaderImage(String uri){
+        Glide.with(this)
+                .load(uri)
+                .centerCrop()
+                .placeholder(R.drawable.img_placeholder)
+                .into(headerImage);
     }
 }

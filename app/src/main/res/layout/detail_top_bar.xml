@@ -2,8 +2,9 @@
 <com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/appbar_layout"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/tall_toolbar_height"
-    style="@style/BaseTheme.MainAppBar"
+    android:layout_height="@dimen/detail_tall_toolbar_height"
+    style="@style/BaseTheme.Detail.MainAppBar"
+    android:fitsSystemWindows="true"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <com.google.android.material.appbar.CollapsingToolbarLayout
@@ -11,13 +12,33 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:collapsedTitleTextAppearance="@style/BaseTheme.MainAppBar.TitleText.Detail.Collapsed"
-        app:expandedTitleMarginBottom="8dp"
+        app:expandedTitleMarginBottom="15dp"
         app:expandedTitleMarginStart="30dp"
         app:layout_scrollFlags="scroll|exitUntilCollapsed"
         app:contentScrim="?attr/backgroundColor"
         app:statusBarScrim="?attr/backgroundColor"
         app:expandedTitleTextAppearance="@style/BaseTheme.MainAppBar.TitleText.Detail.Expanded"
         android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/detail_header_overlay">
+
+            <ImageView
+                android:id="@+id/header_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/header_image"/>
+
+            <View
+                android:id="@+id/header_overlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/detail_header_overlay"/>
+
+        </RelativeLayout>
 
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/toolbar"

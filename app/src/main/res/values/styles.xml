@@ -126,11 +126,18 @@
     *                                                                                              *
     ************************************************************************************************
     -->
+    <style name="BaseTheme.Detail.MainAppBar" parent="BaseTheme.MainAppBar">
+        <item name="android:homeAsUpIndicator">@drawable/ic_back_detail</item>
+        <item name="homeAsUpIndicator">@drawable/ic_back_detail</item>
+    </style>
+
     <style name="BaseTheme.MainAppBar.TitleText.Detail.Expanded" parent="BaseTheme.MainAppBar.TitleText">
         <item name="contentInsetStart">0dp</item>
         <item name="android:contentInsetStart">0dp</item>
         <item name="android:textSize">33sp</item>
         <item name="android:paddingBottom">73dp</item>
+        <item name="color">@android:color/white</item>
+        <item name="titleTextColor">@android:color/white</item>
     </style>
 
     <style name="BaseTheme.MainAppBar.TitleText.Detail.Collapsed" parent="BaseTheme.MainAppBar.TitleText">
@@ -138,7 +145,13 @@
         <item name="android:layout_gravity">top</item>
         <item name="android:paddingBottom">73dp</item>
     </style>
-
+    <!--
+    ************************************************************************************************
+    *                                                                                              *
+    *                                       TAB BAR DETAIL                                         *
+    *                                                                                              *
+    ************************************************************************************************
+    -->
     <style name="BaseTheme.TabTitle" parent="TextAppearance.Design.Tab">
         <item name="textAllCaps">false</item>
         <item name="android:textAllCaps">false</item>
@@ -162,7 +175,6 @@
         <item name="queryBackground">@android:color/transparent</item>
         <item name="android:editTextColor">?attr/editTextColor</item>
         <item name="android:textColorHint">?attr/hintTextColor</item>
-        <item name="searchIcon">@drawable/ic_search</item>
         <item name="closeIcon">@drawable/ic_clear</item>
     </style>
 

@@ -16,7 +16,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public abstract class SabbiaActivity extends AppCompatActivity {
 
-
     /**
      *
      * @param savedInstanceState the saved instance
@@ -36,7 +35,6 @@ public abstract class SabbiaActivity extends AppCompatActivity {
         configuration.setToDefaults();
 
         int currentNightMode = configuration.uiMode & Configuration.UI_MODE_NIGHT_MASK;
-
         switch (currentNightMode) {
             case Configuration.UI_MODE_NIGHT_NO:
                 setTheme(R.style.LightTheme);

@@ -71,7 +71,20 @@ public class BeachFactory {
         Beach beach8 = new Beach(8, "Torregrande", "Oristano (OR)", "https://lh3.googleusercontent.com/proxy/HHnKqd7gWP_QZbaUk8ndQg5M18Iy5fxZP2vEJadNJDn172VtTTr_uPhidkUf905GMeJsJIYMpEolW3kc8iK4JB95kwlpAohkX5Bv1I0-FeacnT7A-AHvo8E");
         beachList.add(beach8);
 
+    }
 
+    /**
+     *
+     * @param id the id of the beach
+     * @return the beach with the given id
+     */
+    public Beach getBeachById(int id){
+        for (Beach b: beachList) {
+            if(b.getId() == id){
+                return b;
+            }
+        }
+        return null;
     }
 
 }

@@ -33,4 +33,5 @@
     <!-- search active -->
     <string name="title_activity_beach_active"> </string>
     <string name="beach_image">beach image</string>
+    <string name="header_image">header image</string>
 </resources>
