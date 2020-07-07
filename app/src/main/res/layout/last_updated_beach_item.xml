@@ -31,7 +31,7 @@
             android:gravity="bottom|start"
             android:padding="20dp"
             android:orientation="vertical"
-            android:background="@drawable/card_sea_bg">
+            android:background="@drawable/full_width_card_overlay_bg">
 
             <TextView
                 android:id="@+id/title"

@@ -61,4 +61,6 @@
     -->
     <color name="greenGradientStart">#0098DE5B</color>
     <color name="greenGradientEnd">#4D131313</color>
+
+    <color name="overlay">#95000000</color>
 </resources>
