@@ -21,7 +21,7 @@
             style="@style/BaseTheme.Label"
             android:layout_marginBottom="0dp"
             android:layout_marginTop="10dp"
-            android:text="@string/search_rated" />
+            android:text="@string/search_saved_label" />
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/promoted_rv"
             android:layout_width="match_parent"

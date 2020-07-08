@@ -12,6 +12,9 @@
     <!-- user last activity -->
     <include layout="@layout/home_user_current_activity" />
 
+    <!--user no activity -->
+    <include layout="@layout/home_user_no_activity" />
+
     <!-- user activity history -->
     <include layout="@layout/home_activity_history" />
 

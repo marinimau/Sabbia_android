@@ -12,6 +12,7 @@ import com.marinumau.sabbia.utils.SoftKeyBoardManager;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.SearchView;
+import androidx.core.widget.NestedScrollView;
 import androidx.navigation.NavController;
 import androidx.navigation.NavDestination;
 import androidx.navigation.Navigation;
@@ -27,6 +28,7 @@ public class MainActivity extends SabbiaActivity {
     NavController navController;
     BottomNavigationView navView;
     CollapsingToolbarLayout collapsingToolbarLayout;
+    NestedScrollView nestedScrollView;
 
     /**
      *
@@ -59,6 +61,7 @@ public class MainActivity extends SabbiaActivity {
         navView = findViewById(R.id.nav_view);
         collapsingToolbarLayout = findViewById(R.id.collapsing_toolbar_layout);
         toolbar = findViewById(R.id.toolbar);
+        nestedScrollView = findViewById(R.id.scroll);
 
         navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         AppBarConfiguration appBarConfiguration =
@@ -80,6 +83,7 @@ public class MainActivity extends SabbiaActivity {
                     getSupportActionBar().setDisplayShowHomeEnabled(false);
                 }
                 appBarLayout.setExpanded(true);
+                nestedScrollView.scrollTo(0,0);
             }
 
         });

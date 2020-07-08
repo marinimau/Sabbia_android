@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
         style="@style/BaseTheme.Card"
@@ -13,7 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/card_orange_coral_bg">
-            
+
             <LinearLayout
                 android:id="@+id/root_container"
                 android:layout_width="match_parent"
@@ -21,7 +22,7 @@
                 android:orientation="vertical"
                 android:minHeight="50dp"
                 android:padding="25dp">
-                
+
                 <!-- date -->
                 <TextView
                     android:layout_width="match_parent"
@@ -34,7 +35,7 @@
                     android:textSize="22sp"
                     android:text="@string/home_current_activity_date"
                     tools:ignore="RtlCompat" />
-                
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -152,13 +153,24 @@
                     </LinearLayout>
 
 
-                    
+
                 </LinearLayout>
-                
+
+                <Button
+                    android:id="@+id/btn_stop_registration"
+                    style="@style/BaseTheme.PrimaryButton"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="0dp"
+                    android:text="@string/home_current_activity_button_text" />
+
             </LinearLayout>
-            
+
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 
 
-</RelativeLayout>
+
+
+</LinearLayout>

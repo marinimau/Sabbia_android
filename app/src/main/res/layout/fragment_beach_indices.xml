@@ -10,6 +10,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <!-- beach detail control center -->
+        <include layout="@layout/beach_layout_control_center"/>
+
         <!-- start from -->
         <TextView
             style="@style/BaseTheme.Label"
@@ -36,7 +39,7 @@
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:scrollIndicators="none">
+            android:scrollbars="none">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -72,7 +75,7 @@
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:scrollIndicators="none">
+            android:scrollbars="none">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -103,7 +106,7 @@
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:scrollIndicators="none">
+            android:scrollbars="none">
 
             <LinearLayout
                 android:layout_width="wrap_content"
