@@ -16,36 +16,14 @@
     <include
         layout="@layout/detail_tab_view"/>
 
-    <!-- scrolling contents -->
-    <androidx.core.widget.NestedScrollView
-        android:id="@+id/scroll"
+    <!-- view pager -->
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:clipToPadding="false"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        android:layout_marginBottom="70dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
-        <!-- view pager -->
-        <androidx.viewpager.widget.ViewPager
-            android:id="@+id/view_pager"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
-
-    </androidx.core.widget.NestedScrollView>
-
-    <!-- fab -->
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        android:elevation="24dp"
-        android:translationZ="24dp"
-       android:translationY="-40dp"
-        android:visibility="gone"
-        app:backgroundTint="@android:color/black"
-        app:srcCompat="@android:drawable/ic_lock_idle_low_battery" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

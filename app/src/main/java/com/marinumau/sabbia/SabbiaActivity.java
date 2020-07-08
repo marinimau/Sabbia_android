@@ -35,6 +35,7 @@ public abstract class SabbiaActivity extends AppCompatActivity {
         configuration.setToDefaults();
 
         int currentNightMode = configuration.uiMode & Configuration.UI_MODE_NIGHT_MASK;
+        currentNightMode = Configuration.UI_MODE_NIGHT_YES;
         switch (currentNightMode) {
             case Configuration.UI_MODE_NIGHT_NO:
                 setTheme(R.style.LightTheme);

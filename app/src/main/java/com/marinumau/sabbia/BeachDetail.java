@@ -41,8 +41,6 @@ public class BeachDetail extends SabbiaActivity {
 
         initActionBar();
         initTabs();
-        initFab();
-        fixViewPagerInsideScrollView();
         setHeaderContents();
 
     }
@@ -68,29 +66,6 @@ public class BeachDetail extends SabbiaActivity {
         viewPager.setAdapter(sectionsPagerAdapter);
         TabLayout tabs = findViewById(R.id.tabs);
         tabs.setupWithViewPager(viewPager);
-    }
-
-    /**
-     *
-     */
-    private void fixViewPagerInsideScrollView(){
-        NestedScrollView scrollView = (NestedScrollView) findViewById (R.id.scroll);
-        scrollView.setFillViewport (true);
-    }
-
-    /**
-     *
-     */
-    private void initFab(){
-        FloatingActionButton fab = findViewById(R.id.fab);
-
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
     }
 
     /**

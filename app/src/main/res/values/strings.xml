@@ -30,6 +30,19 @@
     <string name="detail_index_people_label">Frequentazione:</string>
     <string name="detail_index_parking_label">Parcheggi:</string>
     <string name="detail_index_sea_label">Qualità spiaggia:</string>
+    <!-- people indices -->
+    <string name="people_index_social_distancing">Distanziamento sociale</string>
+    <string name="people_index_people_category">Tipo di frequentatori</string>
+    <string name="people_index_people_gender">Genere</string>
+    <!-- parking index -->
+    <string name="parking_index_avg_distance">Distanza dalla spiaggia</string>
+    <string name="parking_index_payment">A pagamento</string>
+    <!-- sea quality index -->
+    <string name="quality_index_sea">Valutazione della spiaggia</string>
+    <!-- index measures placeholder -->
+    <string name="index_placeholder_percentage">45%</string>
+    <string name="index_placeholder_meters">2,5m</string>
+    <string name="index_placeholder_rating">3.1 / 5</string>
     <!-- detail control center -->
     <string name="detail_sign_toggle_off"> </string>
     <string name="detail_sign_toggle_on"> </string>

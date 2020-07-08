@@ -181,8 +181,8 @@
     </style>
 
     <style name="BaseTheme.ControlCenterToggle.Btn">
-        <item name="android:layout_width">30dp</item>
-        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
         <item name="background">@android:color/transparent</item>
         <item name="android:textSize">12sp</item>
         <item name="fontFamily">@font/sf_display_medium</item>
@@ -200,7 +200,7 @@
     -->
 
     <style name="BaseTheme.IndexCard" parent="BaseTheme.Card">
-        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_width">170dp</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
 
@@ -218,8 +218,30 @@
         <item name="android:textSize">12sp</item>
         <item name="android:layout_marginTop">6dp</item>
         <item name="android:layout_gravity">center</item>
+        <item name="android:textAlignment">center</item>
     </style>
 
+    <style name="BaseTheme.IndexProgressCircle" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:indeterminate">false</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:progressDrawable">@drawable/progress_bar_foreground</item>
+        <item name="android:background">@drawable/progress_bar_background</item>
+    </style>
+
+    <style name="BaseTheme.IndexProgressCircleLabel">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="backgroundColor">@android:color/transparent</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/sf_display_semibold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
 
     <!--
     ************************************************************************************************
@@ -320,6 +342,7 @@
         <item name="android:translationY">6dp</item>
         <item name="android:translationX">0dp</item>
         <item name="android:translationZ">10dp</item>
+        <item name="cardBackgroundColor">?attr/elevationOverlayColor</item>
     </style>
 
     <style name="TextAppearance.Design.Snackbar.Message" parent="android:TextAppearance" tools:override="true">
