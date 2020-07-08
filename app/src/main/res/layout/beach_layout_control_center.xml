@@ -17,7 +17,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/BaseTheme.ControlCenterToggle">
+            style="@style/BaseTheme.Card">
 
             <ToggleButton
                 android:text=""
@@ -38,7 +38,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/BaseTheme.ControlCenterToggle">
+            style="@style/BaseTheme.Card">
 
             <ToggleButton
                 android:text=""
@@ -58,7 +58,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/BaseTheme.ControlCenterToggle">
+            style="@style/BaseTheme.Card">
 
             <ToggleButton
                 android:text=""

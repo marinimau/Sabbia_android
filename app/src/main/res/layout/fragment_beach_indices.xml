@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    xmlns:CircleProgressView="http://schemas.android.com/tools">
 
     <LinearLayout
         android:orientation="vertical"
@@ -36,36 +35,8 @@
             style="@style/BaseTheme.Label"
             android:text="@string/detail_index_people_label"
             android:layout_marginBottom="0dp"/>
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:scrollbars="none">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <androidx.cardview.widget.CardView
-                    android:minWidth="120dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="120dp"
-                    style="@style/BaseTheme.Card" />
-
-                <androidx.cardview.widget.CardView
-                    android:minWidth="120dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="120dp"
-                    style="@style/BaseTheme.Card" />
-
-                <androidx.cardview.widget.CardView
-                    android:minWidth="120dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="120dp"
-                    style="@style/BaseTheme.Card" />
-
-            </LinearLayout>
-        </HorizontalScrollView>
+        <include
+            layout="@layout/indices_people_layout" />
 
         <!-- parking -->
         <TextView

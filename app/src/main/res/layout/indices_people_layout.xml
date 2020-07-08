@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:CircleProgressView="http://schemas.android.com/tools"
+    android:scrollbars="none">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        style="@style/BaseTheme.IndexCard">
+
+        <LinearLayout
+            style="@style/BaseTheme.IndexContainer">
+
+            <at.grabner.circleprogress.CircleProgressView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                CircleProgressView:cpv_blockCount="18"
+                android:layout_gravity="center"
+                CircleProgressView:cpv_blockScale="1"
+                CircleProgressView:rim="?attr/searchBg"
+                CircleProgressView:cpv_seekMode="true"
+                CircleProgressView:cpv_autoTextSize="true"
+                CircleProgressView:cpv_barColor="@color/colorPrimary"
+                CircleProgressView:cpv_barWidth="10dp"
+                CircleProgressView:cpv_innerContourSize="0dp"
+                CircleProgressView:cpv_maxValue="100"
+                CircleProgressView:cpv_outerContourSize="0dp"
+                CircleProgressView:cpv_rimColor="?attr/searchBg"
+                CircleProgressView:cpv_rimWidth="10dp"
+                CircleProgressView:cpv_showUnit="true"
+                CircleProgressView:cpv_spinColor="@color/colorPrimary"
+                CircleProgressView:cpv_textScale=".7"
+                CircleProgressView:cpv_unit="%"
+                CircleProgressView:cpv_unitColor="?attr/icons"
+                CircleProgressView:cpv_unitPosition="right_top"
+                CircleProgressView:cpv_unitScale=".7"
+                CircleProgressView:cpv_value="10" />
+
+            <TextView
+                style="@style/BaseTheme.IndexLabel"
+                android:text="@string/detail_index_people_label" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        style="@style/BaseTheme.IndexCard">
+
+        <LinearLayout
+            style="@style/BaseTheme.IndexContainer">
+
+            <at.grabner.circleprogress.CircleProgressView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                CircleProgressView:cpv_blockCount="18"
+                android:layout_gravity="center"
+                CircleProgressView:cpv_blockScale="1"
+                CircleProgressView:rim="?attr/searchBg"
+                CircleProgressView:cpv_seekMode="true"
+                CircleProgressView:cpv_autoTextSize="true"
+                CircleProgressView:cpv_barColor="@color/colorPrimary"
+                CircleProgressView:cpv_barWidth="10dp"
+                CircleProgressView:cpv_innerContourSize="0dp"
+                CircleProgressView:cpv_maxValue="100"
+                CircleProgressView:cpv_outerContourSize="0dp"
+                CircleProgressView:cpv_rimColor="?attr/searchBg"
+                CircleProgressView:cpv_rimWidth="10dp"
+                CircleProgressView:cpv_showUnit="true"
+                CircleProgressView:cpv_spinColor="@color/colorPrimary"
+                CircleProgressView:cpv_textScale=".7"
+                CircleProgressView:cpv_unit="%"
+                CircleProgressView:cpv_unitColor="?attr/icons"
+                CircleProgressView:cpv_unitPosition="right_top"
+                CircleProgressView:cpv_unitScale=".7"
+                CircleProgressView:cpv_value="10" />
+
+            <TextView
+                style="@style/BaseTheme.IndexLabel"
+                android:text="@string/detail_index_people_label" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        style="@style/BaseTheme.IndexCard">
+
+        <LinearLayout
+            style="@style/BaseTheme.IndexContainer">
+
+            <at.grabner.circleprogress.CircleProgressView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                CircleProgressView:cpv_blockCount="18"
+                android:layout_gravity="center"
+                CircleProgressView:cpv_blockScale="1"
+                CircleProgressView:rim="?attr/searchBg"
+                CircleProgressView:cpv_seekMode="true"
+                CircleProgressView:cpv_autoTextSize="true"
+                CircleProgressView:cpv_barColor="@color/colorPrimary"
+                CircleProgressView:cpv_barWidth="10dp"
+                CircleProgressView:cpv_innerContourSize="0dp"
+                CircleProgressView:cpv_maxValue="100"
+                CircleProgressView:cpv_outerContourSize="0dp"
+                CircleProgressView:cpv_rimColor="?attr/searchBg"
+                CircleProgressView:cpv_rimWidth="10dp"
+                CircleProgressView:cpv_showUnit="true"
+                CircleProgressView:cpv_spinColor="@color/colorPrimary"
+                CircleProgressView:cpv_textScale=".7"
+                CircleProgressView:cpv_unit="%"
+                CircleProgressView:cpv_unitColor="?attr/icons"
+                CircleProgressView:cpv_unitPosition="right_top"
+                CircleProgressView:cpv_unitScale=".7"
+                CircleProgressView:cpv_value="10" />
+
+            <TextView
+                style="@style/BaseTheme.IndexLabel"
+                android:text="@string/detail_index_people_label" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
+</HorizontalScrollView>
