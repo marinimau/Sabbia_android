@@ -2,8 +2,7 @@
 <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:CircleProgressView="http://schemas.android.com/apk/res-auto"
-
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:scrollbars="none">
 
 <LinearLayout
@@ -13,6 +12,7 @@
 
     <!-- social distancing -->
     <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="?attr/elevationOverlayColor"
         style="@style/BaseTheme.IndexCard">
 
         <LinearLayout
@@ -47,6 +47,7 @@
 
     <!-- people category -->
     <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="?attr/elevationOverlayColor"
         style="@style/BaseTheme.IndexCard">
 
         <LinearLayout
@@ -79,6 +80,7 @@
 
     <!-- people gender -->
     <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="?attr/elevationOverlayColor"
         style="@style/BaseTheme.IndexCard">
 
         <LinearLayout
