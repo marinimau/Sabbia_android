@@ -199,12 +199,16 @@
     ************************************************************************************************
     -->
 
-    <style name="BaseTheme.IndexCard" parent="BaseTheme.Card">
-        <item name="android:layout_width">170dp</item>
+    <style name="BaseTheme.IndexCard" parent="BaseTheme.NeumorphismCard">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:minWidth">200dp</item>
+        <item name="android:minHeight">180dp</item>
+        <item name="android:layout_margin">6dp</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
 
     <style name="BaseTheme.IndexContainer">
+        <item name="android:minWidth">200dp</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:orientation">vertical</item>
@@ -284,18 +288,31 @@
     -->
     <style name="BaseTheme.PrimaryButton" parent="Widget.AppCompat.Button">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">30dp</item>
-        <item name="android:background">@drawable/button_bg</item>
-        <item name="useCompatPadding">true</item>
-        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?attr/backgroundColor</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:titleTextAppearance">@style/BaseTheme.PrimaryButtonLabel</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="neumorph_backgroundColor">?attr/backgroundColor</item>
+        <item name="neumorph_shadowElevation">6dp</item>
+        <item name="neumorph_shadowColorLight">@color/neumorphismShadowLight</item>
+        <item name="neumorph_shadowColorDark">@color/neumorphismShadowDark</item>
+    </style>
+
+    <style name="BaseTheme.PrimaryButtonLabel">
+        <item name="android:padding">6dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
         <item name="android:textSize">13sp</item>
         <item name="fontFamily">@font/sf_display_semibold</item>
-        <item name="android:translationZ">0dp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textAllCaps">false</item>
-        <item name="android:elevation">0dp</item>
-        <item name="android:padding">0dp</item>
-        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+    </style>
+
+    <style name="BaseTheme.SearchButton" parent="BaseTheme.PrimaryButton">
+
     </style>
     <!--
     ************************************************************************************************
@@ -334,14 +351,18 @@
     <style name="BaseTheme.Card">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_margin">20dp</item>
+        <item name="android:layout_margin">10dp</item>
         <item name="android:paddingTop">30dp</item>
         <item name="android:paddingStart">10dp</item>
         <item name="android:paddingEnd">10dp</item>
         <item name="android:paddingBottom">30dp</item>
-        <item name="android:translationY">6dp</item>
-        <item name="android:translationX">0dp</item>
-        <item name="android:translationZ">10dp</item>
+    </style>
+
+    <style name="BaseTheme.NeumorphismCard" parent="BaseTheme.Card">
+        <item name="neumorph_backgroundColor">?attr/backgroundColor</item>
+        <item name="neumorph_shadowElevation">6dp</item>
+        <item name="neumorph_shadowColorLight">@color/neumorphismShadowLight</item>
+        <item name="neumorph_shadowColorDark">@color/neumorphismShadowDark</item>
     </style>
 
     <style name="TextAppearance.Design.Snackbar.Message" parent="android:TextAppearance" tools:override="true">

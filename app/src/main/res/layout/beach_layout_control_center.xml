@@ -14,11 +14,11 @@
     <LinearLayout
         style="@style/BaseTheme.ControlCenterContainer">
 
-        <androidx.cardview.widget.CardView
+        <soup.neumorphism.NeumorphCardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:cardBackgroundColor="?attr/elevationOverlayColor"
-            style="@style/BaseTheme.Card">
+            style="@style/BaseTheme.NeumorphismCard">
 
             <ToggleButton
                 android:text=""
@@ -27,7 +27,7 @@
                 android:background="@drawable/control_center_subscribe_selector"
                 style="@style/BaseTheme.ControlCenterToggle.Btn" />
 
-        </androidx.cardview.widget.CardView>
+        </soup.neumorphism.NeumorphCardView>
 
 
     </LinearLayout>
@@ -36,11 +36,11 @@
     <LinearLayout
         style="@style/BaseTheme.ControlCenterContainer">
 
-        <androidx.cardview.widget.CardView
+        <soup.neumorphism.NeumorphCardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:cardBackgroundColor="?attr/elevationOverlayColor"
-            style="@style/BaseTheme.Card">
+            style="@style/BaseTheme.NeumorphismCard">
 
             <ToggleButton
                 android:text=""
@@ -49,7 +49,7 @@
                 android:background="@drawable/control_center_view_in_map_selector"
                 style="@style/BaseTheme.ControlCenterToggle.Btn" />
 
-        </androidx.cardview.widget.CardView>
+        </soup.neumorphism.NeumorphCardView>
 
     </LinearLayout>
 
@@ -57,11 +57,11 @@
     <LinearLayout
         style="@style/BaseTheme.ControlCenterContainer">
 
-        <androidx.cardview.widget.CardView
+        <soup.neumorphism.NeumorphCardView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:cardBackgroundColor="?attr/elevationOverlayColor"
-            style="@style/BaseTheme.Card">
+            style="@style/BaseTheme.NeumorphismCard">
 
             <ToggleButton
                 android:text=""
@@ -70,7 +70,7 @@
                 android:background="@drawable/control_center_save_selector"
                 style="@style/BaseTheme.ControlCenterToggle.Btn" />
 
-        </androidx.cardview.widget.CardView>
+        </soup.neumorphism.NeumorphCardView>
 
     </LinearLayout>
 

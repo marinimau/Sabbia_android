@@ -27,22 +27,20 @@ import com.marinumau.sabbia.logic.BeachManager.BeachFactory;
 
 import java.util.Objects;
 
-public class SearchFragment extends Fragment {
+import soup.neumorphism.NeumorphCardView;
 
-    private SearchViewModel searchViewModel;
-    private CardView searchBtn;
+public class SearchFragment extends Fragment {
 
     /**
      *
-     * @param inflater the layout iflater
+     * @param inflater the layout inflater
      * @param container the container
      * @param savedInstanceState the saved instances
      * @return the rendered fragment
      */
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        searchViewModel =
-                ViewModelProviders.of(this).get(SearchViewModel.class);
+        SearchViewModel searchViewModel = ViewModelProviders.of(this).get(SearchViewModel.class);
         View root = inflater.inflate(R.layout.fragment_search, container, false);
 
         searchViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
@@ -63,8 +61,8 @@ public class SearchFragment extends Fragment {
      *
      */
     private void initSearchBtn(View root){
-        searchBtn = (CardView) root.findViewById(R.id.search_btn);
-        searchBtn.setOnClickListener(new View.OnClickListener() {
+        NeumorphCardView searchBtnN = (NeumorphCardView) root.findViewById(R.id.search_btn_n);
+        searchBtnN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 activateSearch();

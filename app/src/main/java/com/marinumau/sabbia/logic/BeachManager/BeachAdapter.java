@@ -27,6 +27,8 @@ import com.marinumau.sabbia.R;
 
 import java.util.ArrayList;
 
+import soup.neumorphism.NeumorphCardView;
+
 public class BeachAdapter extends RecyclerView.Adapter<BeachAdapter.ViewHolder>{
 
     private ArrayList<Beach> beachItems;

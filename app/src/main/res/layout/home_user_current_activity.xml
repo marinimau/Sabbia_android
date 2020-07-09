@@ -3,17 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
-    <androidx.cardview.widget.CardView
-        style="@style/BaseTheme.Card"
+
+    <soup.neumorphism.NeumorphCardView
+        style="@style/BaseTheme.NeumorphismCard"
         android:layout_marginBottom="60dp">
 
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/card_orange_coral_bg">
+            android:layout_height="wrap_content">
 
             <LinearLayout
                 android:id="@+id/root_container"
@@ -31,7 +32,6 @@
                     android:layout_gravity="bottom"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/sf_display_bold"
-                    android:textColor="@android:color/white"
                     android:textSize="22sp"
                     android:text="@string/home_current_activity_date"
                     tools:ignore="RtlCompat" />
@@ -58,7 +58,6 @@
                             android:layout_height="wrap_content"
                             android:textAlignment="viewStart"
                             android:fontFamily="@font/sf_display_bold"
-                            android:textColor="@android:color/white"
                             android:textSize="35sp"
                             android:layout_alignTop="@id/social_distance_label"
                             android:layout_marginTop="-50dp"
@@ -71,7 +70,6 @@
                             android:textAlignment="viewStart"
                             android:layout_centerVertical="true"
                             android:fontFamily="@font/sf_display_bold"
-                            android:textColor="@android:color/white"
                             android:textSize="12sp"
                             android:layout_alignParentBottom="true"
                             android:text="@string/home_current_activity_distance_label"
@@ -93,7 +91,6 @@
                             android:layout_height="wrap_content"
                             android:textAlignment="viewEnd"
                             android:fontFamily="@font/sf_display_medium"
-                            android:textColor="@android:color/white"
                             android:textSize="12sp"
                             android:layout_marginTop="15dp"
                             android:text="@string/home_current_activity_beach_label"
@@ -103,7 +100,6 @@
                             android:layout_height="wrap_content"
                             android:textAlignment="viewEnd"
                             android:fontFamily="@font/sf_display_bold"
-                            android:textColor="@android:color/white"
                             android:textSize="14sp"
                             android:text="@string/home_current_activity_beach_name"
                             tools:ignore="RtlCompat" />
@@ -114,7 +110,6 @@
                             android:layout_height="wrap_content"
                             android:textAlignment="viewEnd"
                             android:fontFamily="@font/sf_display_medium"
-                            android:textColor="@android:color/white"
                             android:textSize="12sp"
                             android:layout_marginTop="15dp"
                             android:text="@string/home_current_activity_time_elapsed_label"
@@ -124,7 +119,6 @@
                             android:layout_height="wrap_content"
                             android:textAlignment="viewEnd"
                             android:fontFamily="@font/sf_display_bold"
-                            android:textColor="@android:color/white"
                             android:textSize="14sp"
                             android:text="@string/home_current_activity_time_elapsed"
                             tools:ignore="RtlCompat" />
@@ -135,7 +129,6 @@
                             android:layout_height="wrap_content"
                             android:textAlignment="viewEnd"
                             android:fontFamily="@font/sf_display_medium"
-                            android:textColor="@android:color/white"
                             android:textSize="12sp"
                             android:layout_marginTop="15dp"
                             android:text="@string/home_current_activity_parking_label"
@@ -145,7 +138,6 @@
                             android:layout_height="wrap_content"
                             android:textAlignment="viewEnd"
                             android:fontFamily="@font/sf_display_bold"
-                            android:textColor="@android:color/white"
                             android:textSize="14sp"
                             android:text="@string/home_current_activity_parking"
                             tools:ignore="RtlCompat" />
@@ -156,19 +148,21 @@
 
                 </LinearLayout>
 
-                <Button
+                <soup.neumorphism.NeumorphButton
                     android:id="@+id/btn_stop_registration"
                     style="@style/BaseTheme.PrimaryButton"
                     android:layout_marginTop="20dp"
                     android:layout_marginStart="0dp"
                     android:layout_marginEnd="0dp"
                     android:layout_marginBottom="0dp"
-                    android:text="@string/home_current_activity_button_text" />
+                    android:text="@string/home_current_activity_button_text"/>
+
+
 
             </LinearLayout>
 
         </RelativeLayout>
-    </androidx.cardview.widget.CardView>
+    </soup.neumorphism.NeumorphCardView>
 
 
 

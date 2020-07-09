@@ -35,7 +35,8 @@
             <View
                 android:id="@+id/header_overlay"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_height="70dp"
                 android:background="@drawable/detail_header_overlay"/>
 
         </RelativeLayout>

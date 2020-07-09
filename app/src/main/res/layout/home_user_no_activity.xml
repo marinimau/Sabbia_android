@@ -6,15 +6,14 @@
     android:id="@+id/no_activity_message"
     android:visibility="gone">
 
-    <androidx.cardview.widget.CardView
-        style="@style/BaseTheme.Card"
+    <soup.neumorphism.NeumorphCardView
+        style="@style/BaseTheme.NeumorphismCard"
         android:layout_marginBottom="60dp">
 
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/card_orange_coral_bg">
+            android:layout_height="wrap_content">
 
             <LinearLayout
                 android:id="@+id/root_container"
@@ -32,7 +31,6 @@
                     android:layout_gravity="bottom"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/sf_display_bold"
-                    android:textColor="@android:color/white"
                     android:textSize="18sp"
                     android:text="@string/home_no_activity_title"
                     tools:ignore="RtlCompat" />
@@ -42,7 +40,6 @@
                     android:layout_height="wrap_content"
                     android:textAlignment="viewStart"
                     android:fontFamily="@font/sf_display_medium"
-                    android:textColor="@android:color/white"
                     android:textSize="15sp"
                     android:layout_marginTop="15dp"
                     android:text="@string/home_no_activity_description"
@@ -51,7 +48,7 @@
             </LinearLayout>
 
         </RelativeLayout>
-    </androidx.cardview.widget.CardView>
+    </soup.neumorphism.NeumorphCardView>
 
 
 </RelativeLayout>

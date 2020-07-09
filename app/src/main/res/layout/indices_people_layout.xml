@@ -11,7 +11,7 @@
     android:orientation="horizontal">
 
     <!-- social distancing -->
-    <androidx.cardview.widget.CardView
+    <soup.neumorphism.NeumorphCardView
         app:cardBackgroundColor="?attr/elevationOverlayColor"
         style="@style/BaseTheme.IndexCard">
 
@@ -41,12 +41,12 @@
 
         </LinearLayout>
 
-    </androidx.cardview.widget.CardView>
+    </soup.neumorphism.NeumorphCardView>
 
 
 
     <!-- people category -->
-    <androidx.cardview.widget.CardView
+    <soup.neumorphism.NeumorphCardView
         app:cardBackgroundColor="?attr/elevationOverlayColor"
         style="@style/BaseTheme.IndexCard">
 
@@ -76,10 +76,10 @@
 
         </LinearLayout>
 
-    </androidx.cardview.widget.CardView>
+    </soup.neumorphism.NeumorphCardView>
 
     <!-- people gender -->
-    <androidx.cardview.widget.CardView
+    <soup.neumorphism.NeumorphCardView
         app:cardBackgroundColor="?attr/elevationOverlayColor"
         style="@style/BaseTheme.IndexCard">
 
@@ -109,7 +109,7 @@
 
         </LinearLayout>
 
-    </androidx.cardview.widget.CardView>
+    </soup.neumorphism.NeumorphCardView>
 
 </LinearLayout>
 </HorizontalScrollView>

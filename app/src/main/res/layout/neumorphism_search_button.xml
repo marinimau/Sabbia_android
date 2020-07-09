@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
+<soup.neumorphism.NeumorphCardView
     android:layout_width="match_parent"
-    android:id="@+id/search_btn"
+    android:id="@+id/search_btn_n"
     android:layout_marginTop="20dp"
     android:layout_marginBottom="0dp"
-    android:layout_height="40dp"
-    app:cardElevation="0dp"
-    android:translationZ="0dp"
-    app:cardBackgroundColor="?attr/searchBg"
-    style="@style/BaseTheme.Card"
+    android:layout_marginStart="0dp"
+    android:layout_marginEnd="0dp"
+    app:neumorph_shapeType="flat"
+    style="@style/BaseTheme.NeumorphismCard"
     tools:ignore="MissingConstraints"
     android:clickable="true"
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -37,4 +36,4 @@
             android:text="@string/serchview_hint_text"/>
     </RelativeLayout>
 
-</androidx.cardview.widget.CardView>
+</soup.neumorphism.NeumorphCardView>
