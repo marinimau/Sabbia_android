@@ -27,6 +27,12 @@
     <string name="detail_tab_text_1">Indici</string>
     <string name="detail_tab_text_2">Bacheca</string>
     <string name="detail_index_start_from_label">Indici a partire da:</string>
+    <string-array name="index_start_spinner_options">
+        <item>Oggi</item>
+        <item>Ultimi settimana</item>
+        <item>Ultimo mese</item>
+        <item>Dall\'inizio</item>
+    </string-array>
     <string name="detail_index_people_label">Frequentazione:</string>
     <string name="detail_index_parking_label">Parcheggi:</string>
     <string name="detail_index_sea_label">Qualità spiaggia:</string>

@@ -4,6 +4,9 @@
     android:id="@+id/card_container"
     android:layout_width="230dp"
     android:layout_height="130dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
     style="@style/BaseTheme.BeachNeumorphismCard">
 
 
