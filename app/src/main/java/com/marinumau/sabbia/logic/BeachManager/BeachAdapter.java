@@ -18,7 +18,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
@@ -144,7 +143,7 @@ public class BeachAdapter extends RecyclerView.Adapter<BeachAdapter.ViewHolder>{
      *
      */
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        CardView container;
+        NeumorphCardView container;
         TextView title;
         TextView subtitle;
         ImageView cardImg;

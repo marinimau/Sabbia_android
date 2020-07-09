@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.marinumau.sabbia.R;
@@ -46,7 +47,10 @@ public class HomeFragment extends Fragment {
      */
     private void populateHistory(View root){
         BeachFactory beachFactory = BeachFactory.getInstance();
-        RecyclerView recyclerView = root.findViewById(R.id.menuGrid);
+        RecyclerView recyclerView = root.findViewById(R.id.history_grid);
+
+        recyclerView.setHasFixedSize(true);
+
         int numberOfColumns = 2;
         recyclerView.setLayoutManager(new GridLayoutManager(getActivity(), numberOfColumns));
         BeachAdapter adapter = new BeachAdapter(getActivity(), Objects.requireNonNull(getActivity()).getApplicationContext(), beachFactory.getBeachList(), 3);

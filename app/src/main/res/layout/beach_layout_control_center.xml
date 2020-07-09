@@ -14,21 +14,10 @@
     <LinearLayout
         style="@style/BaseTheme.ControlCenterContainer">
 
-        <soup.neumorphism.NeumorphCardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:cardBackgroundColor="?attr/elevationOverlayColor"
-            style="@style/BaseTheme.NeumorphismCard">
-
-            <ToggleButton
-                android:text=""
-                android:textOff="@string/detail_sign_toggle_off"
-                android:textOn="@string/detail_sign_toggle_on"
-                android:background="@drawable/control_center_subscribe_selector"
-                style="@style/BaseTheme.ControlCenterToggle.Btn" />
-
-        </soup.neumorphism.NeumorphCardView>
-
+        <soup.neumorphism.NeumorphImageButton
+            android:id="@+id/btn_subscribe"
+            android:src="@drawable/control_center_subscribe_selector"
+            style="@style/BaseTheme.ControlCenterToggle" />
 
     </LinearLayout>
 
@@ -36,20 +25,11 @@
     <LinearLayout
         style="@style/BaseTheme.ControlCenterContainer">
 
-        <soup.neumorphism.NeumorphCardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:cardBackgroundColor="?attr/elevationOverlayColor"
-            style="@style/BaseTheme.NeumorphismCard">
+        <soup.neumorphism.NeumorphImageButton
+            android:id="@+id/btn_view_in_map"
+            android:src="@drawable/control_center_view_in_map_selector"
+            style="@style/BaseTheme.ControlCenterToggle" />
 
-            <ToggleButton
-                android:text=""
-                android:textOff="@string/detail_map_toggle"
-                android:textOn="@string/detail_map_toggle"
-                android:background="@drawable/control_center_view_in_map_selector"
-                style="@style/BaseTheme.ControlCenterToggle.Btn" />
-
-        </soup.neumorphism.NeumorphCardView>
 
     </LinearLayout>
 
@@ -57,20 +37,10 @@
     <LinearLayout
         style="@style/BaseTheme.ControlCenterContainer">
 
-        <soup.neumorphism.NeumorphCardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:cardBackgroundColor="?attr/elevationOverlayColor"
-            style="@style/BaseTheme.NeumorphismCard">
-
-            <ToggleButton
-                android:text=""
-                android:textOff="@string/detail_save_toggle_off"
-                android:textOn="@string/detail_save_toggle_on"
-                android:background="@drawable/control_center_save_selector"
-                style="@style/BaseTheme.ControlCenterToggle.Btn" />
-
-        </soup.neumorphism.NeumorphCardView>
+        <soup.neumorphism.NeumorphImageButton
+            android:id="@+id/btn_save"
+            android:src="@drawable/control_center_save_selector"
+            style="@style/BaseTheme.ControlCenterToggle" />
 
     </LinearLayout>
 

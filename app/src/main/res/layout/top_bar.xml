@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="@dimen/tall_toolbar_height"
     style="@style/BaseTheme.MainAppBar"
+    android:fitsSystemWindows="true"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <com.google.android.material.appbar.CollapsingToolbarLayout
@@ -16,6 +17,7 @@
         app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
         app:contentScrim="?attr/backgroundColor"
         app:statusBarScrim="?attr/backgroundColor"
+        android:fitsSystemWindows="true"
         app:expandedTitleTextAppearance="@style/BaseTheme.MainAppBar.TitleText.Expanded">
 
         <com.google.android.material.appbar.MaterialToolbar

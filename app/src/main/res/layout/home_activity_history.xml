@@ -10,7 +10,7 @@
         android:text="@string/home_last_activities_label" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/menuGrid"
+        android:id="@+id/history_grid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:numColumns="2"

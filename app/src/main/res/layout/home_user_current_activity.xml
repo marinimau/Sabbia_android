@@ -31,7 +31,7 @@
                     android:textAlignment="viewEnd"
                     android:layout_gravity="bottom"
                     android:layout_marginTop="10dp"
-                    android:fontFamily="@font/sf_display_bold"
+                    android:fontFamily="@font/sf_display_heavy"
                     android:textSize="22sp"
                     android:text="@string/home_current_activity_date"
                     tools:ignore="RtlCompat" />
@@ -52,25 +52,30 @@
                         android:minHeight="100dp"
                         tools:ignore="RtlSymmetry">
 
-                        <TextView
-                            android:id="@+id/social_distance_tv"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textAlignment="viewStart"
-                            android:fontFamily="@font/sf_display_bold"
-                            android:textSize="35sp"
-                            android:layout_alignTop="@id/social_distance_label"
-                            android:layout_marginTop="-50dp"
-                            android:text="@string/home_current_activity_distance_num"
-                            tools:ignore="RtlCompat" />
+                        <RelativeLayout
+                            android:layout_alignBottom="@id/social_distance_label"
+                            android:layout_marginBottom="45dp"
+                            android:layout_width="110dp"
+                            android:layout_height="110dp">
+
+                            <ProgressBar
+                                style="@style/BaseTheme.IndexProgressCircle"
+                                android:max="100"
+                                android:progress="25" />
+
+                            <TextView
+                                style="@style/BaseTheme.IndexProgressCircleLabel"
+                                android:text="@string/index_placeholder_meters" />
+
+                        </RelativeLayout>
                         <TextView
                             android:id="@+id/social_distance_label"
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textAlignment="viewStart"
                             android:layout_centerVertical="true"
                             android:fontFamily="@font/sf_display_bold"
-                            android:textSize="12sp"
+                            android:textSize="14sp"
                             android:layout_alignParentBottom="true"
                             android:text="@string/home_current_activity_distance_label"
                             tools:ignore="RtlCompat" />

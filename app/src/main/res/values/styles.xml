@@ -24,6 +24,7 @@
         <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
         <item name="cardCornerRadius">20dp</item>
         <item name="android:navigationBarColor">@android:color/black</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
         <!-- enable window content transitions -->
         <item name="android:windowActivityTransitions">true</item>
         <!-- specify enter and exit transitions -->
@@ -54,7 +55,6 @@
         <item name="editTextColor">@color/colorText</item>
         <item name="searchBg">@color/searchBgColor</item>
         <item name="android:windowLightStatusBar">true</item>
-        <item name="android:statusBarColor">@color/colorBackground</item>
         <item name="android:textColor">@color/colorText</item>
         <item name="backgroundColor">@color/colorBackground</item>
         <item name="cardBackgroundColor">@color/colorElevated</item>
@@ -79,7 +79,6 @@
         <item name="editTextColor">@color/darkModeColorText</item>
         <item name="searchBg">@color/darkModeSearchBgColor</item>
         <item name="android:windowLightStatusBar">false</item>
-        <item name="android:statusBarColor">@color/darkModeColorBackground</item>
         <item name="android:textColor">@color/darkModeColorText</item>
         <item name="backgroundColor">@color/darkModeColorBackground</item>
         <item name="cardBackgroundColor">@color/darkModeColorElevated</item>
@@ -172,11 +171,14 @@
         <item name="android:gravity">center</item>
     </style>
 
-    <style name="BaseTheme.ControlCenterToggle">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="cardBackgroundColor">?attr/searchBg</item>
-        <item name="android:padding">0dp</item>
+    <style name="BaseTheme.ControlCenterToggle" parent="Widget.Neumorph.ImageButton">
+        <item name="android:layout_width">88dp</item>
+        <item name="android:layout_height">88dp</item>
+        <item name="neumorph_backgroundColor">?attr/backgroundColor</item>
+        <item name="neumorph_shadowElevation">6dp</item>
+        <item name="neumorph_shadowColorLight">@color/neumorphismShadowLight</item>
+        <item name="neumorph_shadowColorDark">@color/neumorphismShadowDark</item>
+        <item name="android:padding">10dp</item>
         <item name="android:layout_margin">15dp</item>
     </style>
 
@@ -189,7 +191,7 @@
         <item name="android:gravity">center|bottom</item>
         <item name="android:paddingTop">20dp</item>
         <item name="android:paddingBottom">5dp</item>
-        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_margin">20dp</item>
     </style>
     <!--
     ************************************************************************************************
@@ -286,7 +288,7 @@
     *                                                                                              *
     ************************************************************************************************
     -->
-    <style name="BaseTheme.PrimaryButton" parent="Widget.AppCompat.Button">
+    <style name="BaseTheme.PrimaryButton" parent="Widget.Neumorph.Button">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">?attr/backgroundColor</item>
@@ -294,7 +296,6 @@
         <item name="android:textAllCaps">false</item>
         <item name="android:textAlignment">center</item>
         <item name="android:titleTextAppearance">@style/BaseTheme.PrimaryButtonLabel</item>
-        <item name="android:foreground">?android:attr/selectableItemBackground</item>
         <item name="neumorph_backgroundColor">?attr/backgroundColor</item>
         <item name="neumorph_shadowElevation">6dp</item>
         <item name="neumorph_shadowColorLight">@color/neumorphismShadowLight</item>
@@ -365,6 +366,20 @@
         <item name="neumorph_shadowColorDark">@color/neumorphismShadowDark</item>
     </style>
 
+    <style name="BaseTheme.BeachNeumorphismCard" parent="Widget.Neumorph.CardView">
+        <item name="neumorph_backgroundColor">@color/colorBackground</item>
+        <item name="neumorph_shadowElevation">6dp</item>
+        <item name="neumorph_shadowColorLight">@color/neumorphismShadowLight</item>
+        <item name="neumorph_shadowColorDark">@color/neumorphismShadowDark</item>
+    </style>
+
+    <!--
+    ************************************************************************************************
+    *                                                                                              *
+    *                                   DIALOGS AND SNACKBAR                                       *
+    *                                                                                              *
+    ************************************************************************************************
+    -->
     <style name="TextAppearance.Design.Snackbar.Message" parent="android:TextAppearance" tools:override="true">
         <item name="android:textColor">@color/colorPrimaryDark</item>
         <item name="android:textSize">17sp</item>
