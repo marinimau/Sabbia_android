@@ -13,10 +13,14 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.marinumau.sabbia.R;
+import com.marinumau.sabbia.logic.BeachManager.Beach;
 import com.marinumau.sabbia.logic.BeachManager.BeachAdapter;
 import com.marinumau.sabbia.logic.BeachManager.BeachFactory;
+import com.marinumau.sabbia.utils.AlertManager;
 
 import java.util.Objects;
+
+import soup.neumorphism.NeumorphButton;
 
 public class HomeFragment extends Fragment {
 
@@ -37,6 +41,7 @@ public class HomeFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_home, container, false);
 
         populateHistory(root);
+        initCurrentActivityCard(root);
 
         return root;
     }
@@ -55,5 +60,19 @@ public class HomeFragment extends Fragment {
         recyclerView.setLayoutManager(new GridLayoutManager(getActivity(), numberOfColumns));
         BeachAdapter adapter = new BeachAdapter(getActivity(), Objects.requireNonNull(getActivity()).getApplicationContext(), beachFactory.getBeachList(), 3);
         recyclerView.setAdapter(adapter);
+    }
+
+    /**
+     *
+     * @param root the root view
+     */
+    private void initCurrentActivityCard(View root){
+        NeumorphButton stopPermanenceBtn = root.findViewById(R.id.btn_stop_registration);
+        stopPermanenceBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertManager.stopBeachPermanenceDialog(Objects.requireNonNull(getActivity()), getContext(), new Beach(0, "Nome", "Cuglieri", "OR"));
+            }
+        });
     }
 }

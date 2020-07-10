@@ -1,13 +1,17 @@
 package com.marinumau.sabbia;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.marinumau.sabbia.logic.MenuLinksManager.LinkAdapter;
 import com.marinumau.sabbia.logic.MenuLinksManager.LinkFactory;
+import com.marinumau.sabbia.utils.AlertManager;
 
 import java.util.Objects;
 
@@ -27,6 +31,7 @@ public class Settings extends SabbiaActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
         populateLinks();
+        initUpdateUserData();
     }
 
 
@@ -50,5 +55,18 @@ public class Settings extends SabbiaActivity {
         LinkAdapter adapter = new LinkAdapter(this, this, linkFactory.getLinkList());
         recyclerView.setAdapter(adapter);
 
+    }
+
+    /**
+     * 
+     */
+    private void initUpdateUserData(){
+        TextView userDataMenuItem = findViewById(R.id.edit_user_tv);
+        userDataMenuItem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertManager.showSnackBarSimple(Settings.this, Settings.this, "Prova snackbar");
+            }
+        });
     }
 }

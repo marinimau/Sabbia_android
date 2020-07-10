@@ -79,4 +79,8 @@
     <string name="settings_rate">Lascia una recensione</string>
     <string name="settings_telegram_channel">Canale Telegram</string>
     <string name="settings_source">Repository Github</string>
+    <!-- dialogs -->
+    <string name="dialog_interrupt_permanence_title">Interrompere la permanenza in spiaggia?</string>
+    <string name="dialog_interrupt_permanence_text">Ricorda di lasciare la spiaggia pulita</string>
+    <string name="dialog_generic_confirm_button_title">Conferma</string>
 </resources>
