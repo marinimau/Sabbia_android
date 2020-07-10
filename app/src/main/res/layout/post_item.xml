@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soup.neumorphism.NeumorphCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/BaseTheme.BeachNeumorphismCard">
+
+
+    <LinearLayout
+        android:id="@+id/root_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- author -->
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_display_bold"
+                android:textSize="13sp"
+                android:textAlignment="viewStart"
+                android:text="@string/item_title" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/sf_display_medium"
+                android:textSize="12sp"
+                android:textAlignment="viewStart"
+                android:text="@string/item_subtitle" />
+
+        </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/corpus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_display_medium"
+        android:textSize="12sp"
+        android:layout_marginTop="6dp"
+        android:textAlignment="viewStart"
+        android:text="@string/item_subtitle" />
+    </LinearLayout>
+
+
+</soup.neumorphism.NeumorphCardView>

@@ -112,11 +112,11 @@
     <style name="BaseTheme.MainAppBar.TitleText.Expanded" parent="BaseTheme.MainAppBar.TitleText">
         <item name="contentInsetStart">0dp</item>
         <item name="android:contentInsetStart">0dp</item>
-        <item name="android:textSize">33sp</item>
+        <item name="android:textSize">30sp</item>
     </style>
 
     <style name="BaseTheme.MainAppBar.TitleText.Collapsed" parent="BaseTheme.MainAppBar.TitleText">
-        <item name="android:textSize">24sp</item>
+        <item name="android:textSize">20sp</item>
     </style>
     <!--
     ************************************************************************************************
@@ -125,7 +125,7 @@
     *                                                                                              *
     ************************************************************************************************
     -->
-    <style name="BaseTheme.Detail.MainAppBar" parent="BaseTheme.MainAppBar">
+    <style name="BaseTheme.DetailMainAppBar" parent="BaseTheme.MainAppBar">
         <item name="android:homeAsUpIndicator">@drawable/ic_back_detail</item>
         <item name="homeAsUpIndicator">@drawable/ic_back_detail</item>
     </style>
@@ -133,14 +133,14 @@
     <style name="BaseTheme.MainAppBar.TitleText.Detail.Expanded" parent="BaseTheme.MainAppBar.TitleText">
         <item name="contentInsetStart">0dp</item>
         <item name="android:contentInsetStart">0dp</item>
-        <item name="android:textSize">33sp</item>
+        <item name="android:textSize">30sp</item>
         <item name="android:paddingBottom">73dp</item>
         <item name="color">@android:color/white</item>
         <item name="titleTextColor">@android:color/white</item>
     </style>
 
     <style name="BaseTheme.MainAppBar.TitleText.Detail.Collapsed" parent="BaseTheme.MainAppBar.TitleText">
-        <item name="android:textSize">24sp</item>
+        <item name="android:textSize">20sp</item>
         <item name="android:layout_gravity">top</item>
         <item name="android:paddingBottom">73dp</item>
     </style>
