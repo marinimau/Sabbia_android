@@ -61,6 +61,8 @@
         <item name="icons">@color/colorIcons</item>
         <item name="iconsAppbar">@color/colorIconsAppbar</item>
         <item name="iconsActive">@color/colorIconsActive</item>
+        <item name="neumorphismShadowLight">@color/neumorphismShadowLight</item>
+        <item name="neumorphismShadowDark">@color/neumorphismShadowDark</item>
         <item name="elevationOverlayColor">@color/colorElevated</item>
     </style>
     <!--
@@ -86,6 +88,8 @@
         <item name="icons">@color/darkModeColorIcons</item>
         <item name="iconsAppbar">@color/darkModeColorIconsAppbar</item>
         <item name="iconsActive">@color/darkModeColorIconsActive</item>
+        <item name="neumorphismShadowLight">@color/darkModeNeumorphismShadowLight</item>
+        <item name="neumorphismShadowDark">@color/darkModeNeumorphismShadowDark</item>
         <item name="elevationOverlayColor">@color/darkModeColorElevated</item>
     </style>
     <!--
@@ -178,8 +182,8 @@
         <item name="android:layout_height">88dp</item>
         <item name="neumorph_backgroundColor">?attr/backgroundColor</item>
         <item name="neumorph_shadowElevation">6dp</item>
-        <item name="neumorph_shadowColorLight">@color/neumorphismShadowLight</item>
-        <item name="neumorph_shadowColorDark">@color/neumorphismShadowDark</item>
+        <item name="neumorph_shadowColorLight">?attr/neumorphismShadowLight</item>
+        <item name="neumorph_shadowColorDark">?attr/neumorphismShadowDark</item>
         <item name="android:padding">10dp</item>
         <item name="android:layout_margin">15dp</item>
     </style>
@@ -300,8 +304,8 @@
         <item name="android:titleTextAppearance">@style/BaseTheme.PrimaryButtonLabel</item>
         <item name="neumorph_backgroundColor">?attr/backgroundColor</item>
         <item name="neumorph_shadowElevation">6dp</item>
-        <item name="neumorph_shadowColorLight">@color/neumorphismShadowLight</item>
-        <item name="neumorph_shadowColorDark">@color/neumorphismShadowDark</item>
+        <item name="neumorph_shadowColorLight">?attr/neumorphismShadowLight</item>
+        <item name="neumorph_shadowColorDark">?attr/neumorphismShadowDark</item>
     </style>
 
     <style name="BaseTheme.PrimaryButtonLabel">
@@ -364,15 +368,15 @@
     <style name="BaseTheme.NeumorphismCard" parent="BaseTheme.Card">
         <item name="neumorph_backgroundColor">?attr/backgroundColor</item>
         <item name="neumorph_shadowElevation">6dp</item>
-        <item name="neumorph_shadowColorLight">@color/neumorphismShadowLight</item>
-        <item name="neumorph_shadowColorDark">@color/neumorphismShadowDark</item>
+        <item name="neumorph_shadowColorLight">?attr/neumorphismShadowLight</item>
+        <item name="neumorph_shadowColorDark">?attr/neumorphismShadowDark</item>
     </style>
 
     <style name="BaseTheme.BeachNeumorphismCard" parent="Widget.Neumorph.CardView">
         <item name="neumorph_backgroundColor">@color/colorBackground</item>
         <item name="neumorph_shadowElevation">6dp</item>
-        <item name="neumorph_shadowColorLight">@color/neumorphismShadowLight</item>
-        <item name="neumorph_shadowColorDark">@color/neumorphismShadowDark</item>
+        <item name="neumorph_shadowColorLight">?attr/neumorphismShadowLight</item>
+        <item name="neumorph_shadowColorDark">?attr/neumorphismShadowDark</item>
     </style>
 
     <!--

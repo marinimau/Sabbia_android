@@ -8,4 +8,6 @@
     <attr name="text" format="color" />
     <attr name="textHint" format="color" />
     <attr name="searchBg" format="color" />
+    <attr name="neumorphismShadowLight" format="color" />
+    <attr name="neumorphismShadowDark" format="color" />
 </declare-styleable>

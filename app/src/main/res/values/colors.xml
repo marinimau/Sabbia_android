@@ -35,11 +35,11 @@
     <color name="darkModeColorTextHint">#85ADADAD</color>
     <color name="darkModeColorIconsActive">#E1E1E1</color>
     <color name="darkModeColorIcons">#808080</color>
-    <color name="darkModeColorIconsAppbar">#606060</color>
+    <color name="darkModeColorIconsAppbar">#ADADAD</color>
     <color name="darkModeColorElevated">#252628</color>
     <color name="darkModeSearchBgColor">#3A3A3A</color>
-    <color name="darkModeNeumorphismShadowLight">#BAFFFFFF</color>
-    <color name="darkModeNeumorphismShadowDark">#2D000000</color>
+    <color name="darkModeNeumorphismShadowLight">#282828</color>
+    <color name="darkModeNeumorphismShadowDark">#0C0C0C</color>
     <!--
     ************************************************************************************************
     *                                                                                              *

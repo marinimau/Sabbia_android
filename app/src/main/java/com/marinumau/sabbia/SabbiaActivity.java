@@ -40,7 +40,9 @@ public abstract class SabbiaActivity extends AppCompatActivity {
         Configuration configuration = new Configuration();
         configuration.setToDefaults();
 
-        int currentNightMode = configuration.uiMode & Configuration.UI_MODE_NIGHT_MASK;
+        int currentNightMode =
+                getResources().getConfiguration().uiMode &
+                        Configuration.UI_MODE_NIGHT_MASK;
 
         switch (currentNightMode) {
             case Configuration.UI_MODE_NIGHT_NO:
