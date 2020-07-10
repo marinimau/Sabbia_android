@@ -2,6 +2,7 @@
 <declare-styleable name="AppTheme">
     <attr name="elevatedColor" format="color" />
     <attr name="icons" format="color" />
+    <attr name="iconsAppbar" format="color" />
     <attr name="iconsActive" format="color" />
     <attr name="safeArea" format="color" />
     <attr name="text" format="color" />

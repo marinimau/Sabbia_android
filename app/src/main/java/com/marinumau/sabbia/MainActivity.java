@@ -1,6 +1,10 @@
 package com.marinumau.sabbia;
 
+import android.app.ActivityOptions;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
 import com.google.android.material.appbar.AppBarLayout;
@@ -23,8 +27,6 @@ import java.util.Objects;
 
 public class MainActivity extends SabbiaActivity {
 
-    AppBarLayout appBarLayout;
-    MaterialToolbar toolbar;
     NavController navController;
     BottomNavigationView navView;
     CollapsingToolbarLayout collapsingToolbarLayout;
@@ -40,18 +42,10 @@ public class MainActivity extends SabbiaActivity {
 
         setContentView(R.layout.activity_main);
 
-        initActionBar();
+        super.initActionBar();
         initNavigation();
         fixBack();
-    }
-
-    /**
-     *
-     */
-    private void initActionBar() {
-        toolbar = (MaterialToolbar) findViewById(R.id.toolbar);
-        appBarLayout = (AppBarLayout) findViewById(R.id.appbar_layout);
-        setSupportActionBar(toolbar);
+        toolbar.inflateMenu(R.menu.options_menu);
     }
 
     /**
@@ -89,5 +83,38 @@ public class MainActivity extends SabbiaActivity {
         });
     }
 
+    /**
+     *
+     * @param menu the menu
+     * @return a flag
+     */
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.options_menu, menu);
+        return true;
+    }
+
+    /**
+     *
+     * @param item the item selected
+     * @return a flag
+     */
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == R.id.navigation_settings) {
+            showSettings();
+            return true;
+        }
+        return true;
+    }
+
+    /**
+     *
+     */
+    private void showSettings(){
+        Intent myIntent = new Intent(this, Settings.class);
+        startActivity(myIntent, ActivityOptions.makeSceneTransitionAnimation(this).toBundle());
+    }
 
 }

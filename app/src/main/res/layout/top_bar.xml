@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/appbar_layout"
     android:layout_width="match_parent"
     android:layout_height="@dimen/tall_toolbar_height"
@@ -24,8 +25,10 @@
             android:id="@+id/toolbar"
             android:elevation="0dp"
             android:layout_height="55dp"
+            android:paddingEnd="16dp"
             app:layout_collapseMode="pin"
-            android:layout_width="match_parent" />
+            android:layout_width="match_parent"
+            tools:ignore="RtlSymmetry" />
 
     </com.google.android.material.appbar.CollapsingToolbarLayout>
 

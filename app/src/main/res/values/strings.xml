@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Sabbia</string>
+    <string name="app_version">Sabbia 1.0.0 - developers beta</string>
     <!-- main fragments -->
     <string name="title_home">Home</string>
     <string name="title_search">Cerca</string>
@@ -27,45 +28,55 @@
     <string name="detail_tab_text_1">Indici</string>
     <string name="detail_tab_text_2">Bacheca</string>
     <string name="detail_index_start_from_label">Indici a partire da:</string>
+    <string name="detail_index_people_label">Frequentazione:</string>
+    <string name="detail_index_parking_label">Parcheggi:</string>
+    <string name="detail_index_sea_label">Qualità spiaggia:</string>
+    <string name="people_index_social_distancing">Distanziamento sociale</string>
+    <!-- people indices -->
+    <string name="people_index_people_category">Tipo di frequentatori</string>
+    <string name="people_index_people_gender">Genere</string>
+    <string name="parking_index_avg_distance">Distanza dalla spiaggia</string>
+    <!-- parking index -->
+    <string name="parking_index_payment">A pagamento</string>
+    <string name="quality_index_sea">Valutazione della spiaggia</string>
+    <!-- sea quality index -->
+    <string name="index_placeholder_percentage">45%</string>
+    <!-- index measures placeholder -->
+    <string name="index_placeholder_meters">2,5m</string>
+    <string name="index_placeholder_rating">3.1 / 5</string>
+    <string name="detail_sign_toggle_off"> </string>
+    <!-- detail control center -->
+    <string name="detail_sign_toggle_on"> </string>
+    <string name="detail_map_toggle"> </string>
+    <string name="detail_save_toggle_off"> </string>
+    <string name="detail_save_toggle_on"> </string>
+    <string name="search_saved_label">Spiagge salvate</string>
+    <!-- search tab -->
+    <string name="search_clean">Recensiti di recente</string>
+    <string name="serchview_hint_text">Dove vorresti andare?</string>
+    <!-- searchview -->
+    <string name="serchview_hint_title">Non trovi ciò che cerchi?</string>
+    <string name="serchview_hint_description">Usa il nome della spiaggia per intero</string>
+    <string name="serchview_hint_button">Segnala spiaggia mancante</string>
+    <string name="title_activity_beach_active"> </string>
+    <!-- search active -->
+    <string name="beach_image">beach image</string>
+    <string name="header_image">header image</string>
+    <string name="search_icon">search icon</string>
     <string-array name="index_start_spinner_options">
         <item>Oggi</item>
         <item>Ultimi settimana</item>
         <item>Ultimo mese</item>
         <item>Dall\'inizio</item>
     </string-array>
-    <string name="detail_index_people_label">Frequentazione:</string>
-    <string name="detail_index_parking_label">Parcheggi:</string>
-    <string name="detail_index_sea_label">Qualità spiaggia:</string>
-    <!-- people indices -->
-    <string name="people_index_social_distancing">Distanziamento sociale</string>
-    <string name="people_index_people_category">Tipo di frequentatori</string>
-    <string name="people_index_people_gender">Genere</string>
-    <!-- parking index -->
-    <string name="parking_index_avg_distance">Distanza dalla spiaggia</string>
-    <string name="parking_index_payment">A pagamento</string>
-    <!-- sea quality index -->
-    <string name="quality_index_sea">Valutazione della spiaggia</string>
-    <!-- index measures placeholder -->
-    <string name="index_placeholder_percentage">45%</string>
-    <string name="index_placeholder_meters">2,5m</string>
-    <string name="index_placeholder_rating">3.1 / 5</string>
-    <!-- detail control center -->
-    <string name="detail_sign_toggle_off"> </string>
-    <string name="detail_sign_toggle_on"> </string>
-    <string name="detail_map_toggle"> </string>
-    <string name="detail_save_toggle_off"> </string>
-    <string name="detail_save_toggle_on"> </string>
-    <!-- search tab -->
-    <string name="search_saved_label">Spiagge salvate</string>
-    <string name="search_clean">Recensiti di recente</string>
-    <!-- searchview -->
-    <string name="serchview_hint_text">Dove vorresti andare?</string>
-    <string name="serchview_hint_title">Non trovi ciò che cerchi?</string>
-    <string name="serchview_hint_description">Usa il nome della spiaggia per intero</string>
-    <string name="serchview_hint_button">Segnala spiaggia mancante</string>
-    <!-- search active -->
-    <string name="title_activity_beach_active"> </string>
-    <string name="beach_image">beach image</string>
-    <string name="header_image">header image</string>
-    <string name="search_icon">search icon</string>
+    <!-- settings -->
+    <string name="settings_title">Impostazioni</string>
+    <string name="settings_user_data_section_title">Dati anagrafici:</string>
+    <string name="settings_links_section_title">Link utili:</string>
+    <string name="settings_user_data_section_item">Modifica i tuoi dati</string>
+    <string name="settings_privacy_policy">Privacy policy</string>
+    <string name="settings_donate">Dona</string>
+    <string name="settings_rate">Lascia una recensione</string>
+    <string name="settings_telegram_channel">Canale Telegram</string>
+    <string name="settings_source">Repository Github</string>
 </resources>

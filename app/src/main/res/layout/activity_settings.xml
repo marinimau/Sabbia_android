@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/backgroundColor"
+    android:fitsSystemWindows="true"
+    android:paddingTop="0dp">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_height="match_parent">
+
+        <!-- topbar -->
+        <include layout="@layout/top_bar" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/BaseTheme.Label"
+                    android:text="@string/settings_user_data_section_title"/>
+
+                <soup.neumorphism.NeumorphCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/BaseTheme.NeumorphismCard">
+
+                    <RelativeLayout
+                        style="@style/BaseTheme.MenuContainer">
+
+                        <TextView
+                            style="@style/BaseTheme.SettingsMenuItem"
+                            android:text="@string/settings_user_data_section_item"/>
+
+                    </RelativeLayout>
+
+
+
+
+                </soup.neumorphism.NeumorphCardView>
+
+                <TextView
+                    style="@style/BaseTheme.Label"
+                    android:text="@string/settings_links_section_title"/>
+
+                <soup.neumorphism.NeumorphCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/BaseTheme.NeumorphismCard">
+
+                    <RelativeLayout
+                       style="@style/BaseTheme.MenuContainer"
+                        android:paddingBottom="10dp">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/links_rv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+                </soup.neumorphism.NeumorphCardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:alpha="0.7"
+                    android:fontFamily="@font/sf_display_bold"
+                    android:text="@string/app_version" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -48,7 +48,7 @@ public class BeachDetail extends SabbiaActivity {
     /**
      *
      */
-    private void initActionBar() {
+    void initActionBar() {
         appBarLayout = (AppBarLayout) findViewById(R.id.appbar_layout);
         toolbar = (MaterialToolbar) findViewById(R.id.toolbar);
         headerImage = (ImageView) findViewById(R.id.header_image);

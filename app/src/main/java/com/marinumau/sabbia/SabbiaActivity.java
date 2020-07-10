@@ -11,9 +11,16 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
+import com.google.android.material.appbar.AppBarLayout;
+import com.google.android.material.appbar.MaterialToolbar;
 
 
 public abstract class SabbiaActivity extends AppCompatActivity {
+
+    Toolbar toolbar;
+    AppBarLayout appBarLayout;
 
     /**
      *
@@ -43,6 +50,15 @@ public abstract class SabbiaActivity extends AppCompatActivity {
                 setTheme(R.style.DarkTheme);
                 break;
         }
+    }
+
+    /**
+     *
+     */
+    void initActionBar() {
+        toolbar = (MaterialToolbar) findViewById(R.id.toolbar);
+        appBarLayout = (AppBarLayout) findViewById(R.id.appbar_layout);
+        setSupportActionBar(toolbar);
     }
 
 

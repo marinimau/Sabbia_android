@@ -35,7 +35,7 @@ public class PostFactory {
     /**
      * @return the list of the posts
      */
-    public ArrayList<Post> getBeachList() {
+    public ArrayList<Post> getPostList() {
         return postList;
     }
 
