@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<soup.neumorphism.NeumorphCardView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/card_container"
     android:layout_width="230dp"
     android:layout_height="130dp"
     android:clickable="true"
     android:focusable="true"
-    style="@style/BaseTheme.BeachNeumorphismCard">
+    style="@style/BaseTheme.BeachCard">
 
 
     <RelativeLayout
@@ -57,4 +57,4 @@
     </RelativeLayout>
 
 
-</soup.neumorphism.NeumorphCardView>
+</androidx.cardview.widget.CardView>

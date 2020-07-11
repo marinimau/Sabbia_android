@@ -2,38 +2,41 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.marinumau.sabbia">
     <!-- permissions -->
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <!-- activities -->
     <application
-        android:hardwareAccelerated="true"
         android:allowBackup="true"
         android:fullBackupContent="true"
+        android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/LightTheme">
         <activity
+            android:label="@string/app_name"
+            android:name=".HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".Settings"
-            android:parentActivityName=".MainActivity"
-            android:label="@string/settings_title"/>
+            android:label="@string/settings_title"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".SearchActive"
             android:parentActivityName=".MainActivity" />
         <activity
-            android:name=".BeachDetail"
+            android:name=".BeachDetailActivity"
             android:label="@string/title_activity_beach_detail"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
-            android:configChanges="uiMode"
-            android:label="@string/app_name">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:label="@string/app_name" />
     </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
 </manifest>

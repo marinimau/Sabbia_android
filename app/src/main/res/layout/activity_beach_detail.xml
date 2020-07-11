@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="?attr/backgroundColor"
     android:fitsSystemWindows="true"
-    tools:context=".BeachDetail">
+    tools:context=".BeachDetailActivity">
 
     <!-- topbar -->
     <include

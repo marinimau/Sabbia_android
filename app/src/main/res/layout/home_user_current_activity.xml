@@ -6,10 +6,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
+    <TextView
+        style="@style/BaseTheme.Label"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/home_last_activities_label" />
 
-    <soup.neumorphism.NeumorphCardView
-        style="@style/BaseTheme.NeumorphismCard"
-        android:layout_marginBottom="60dp">
+
+    <androidx.cardview.widget.CardView
+        style="@style/BaseTheme.Card"
+        android:layout_margin="20dp"
+        android:translationY="-10dp"
+        android:layout_marginBottom="0dp">
 
 
         <RelativeLayout
@@ -32,7 +40,7 @@
                     android:layout_gravity="bottom"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/sf_display_heavy"
-                    android:textSize="22sp"
+                    android:textSize="17sp"
                     android:text="@string/home_current_activity_date"
                     tools:ignore="RtlCompat" />
 
@@ -54,9 +62,9 @@
 
                         <RelativeLayout
                             android:layout_alignBottom="@id/social_distance_label"
-                            android:layout_marginBottom="45dp"
-                            android:layout_width="110dp"
-                            android:layout_height="110dp">
+                            android:layout_marginBottom="40dp"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp">
 
                             <ProgressBar
                                 style="@style/BaseTheme.IndexProgressCircle"
@@ -87,8 +95,7 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight=".5"
-                        android:orientation="vertical"
-                        android:minHeight="100dp">
+                        android:orientation="vertical">
 
                         <!-- beach -->
                         <TextView
@@ -97,7 +104,7 @@
                             android:textAlignment="viewEnd"
                             android:fontFamily="@font/sf_display_medium"
                             android:textSize="12sp"
-                            android:layout_marginTop="15dp"
+                            android:layout_marginTop="10dp"
                             android:text="@string/home_current_activity_beach_label"
                             tools:ignore="RtlCompat" />
                         <TextView
@@ -116,7 +123,7 @@
                             android:textAlignment="viewEnd"
                             android:fontFamily="@font/sf_display_medium"
                             android:textSize="12sp"
-                            android:layout_marginTop="15dp"
+                            android:layout_marginTop="10dp"
                             android:text="@string/home_current_activity_time_elapsed_label"
                             tools:ignore="RtlCompat" />
                         <TextView
@@ -135,7 +142,7 @@
                             android:textAlignment="viewEnd"
                             android:fontFamily="@font/sf_display_medium"
                             android:textSize="12sp"
-                            android:layout_marginTop="15dp"
+                            android:layout_marginTop="10dp"
                             android:text="@string/home_current_activity_parking_label"
                             tools:ignore="RtlCompat" />
                         <TextView
@@ -154,6 +161,7 @@
                 </LinearLayout>
 
                 <soup.neumorphism.NeumorphButton
+                    android:visibility="gone"
                     android:id="@+id/btn_stop_registration"
                     style="@style/BaseTheme.PrimaryButton"
                     android:layout_marginTop="20dp"
@@ -167,7 +175,7 @@
             </LinearLayout>
 
         </RelativeLayout>
-    </soup.neumorphism.NeumorphCardView>
+    </androidx.cardview.widget.CardView>
 
 
 

@@ -7,7 +7,7 @@
     android:visibility="gone">
 
     <soup.neumorphism.NeumorphCardView
-        style="@style/BaseTheme.NeumorphismCard"
+        style="@style/BaseTheme.Card"
         android:layout_marginBottom="60dp">
 
 

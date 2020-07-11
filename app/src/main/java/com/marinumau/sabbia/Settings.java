@@ -50,7 +50,7 @@ public class Settings extends SabbiaActivity {
         DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(recyclerView.getContext(),
                 layoutManager.getOrientation());
         dividerItemDecoration.setDrawable(Objects.requireNonNull(getDrawable(R.drawable.links_divider)));
-        recyclerView.addItemDecoration(dividerItemDecoration);
+        //recyclerView.addItemDecoration(dividerItemDecoration);
 
         LinkAdapter adapter = new LinkAdapter(this, this, linkFactory.getLinkList());
         recyclerView.setAdapter(adapter);

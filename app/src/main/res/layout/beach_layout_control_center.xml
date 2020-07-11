@@ -14,7 +14,7 @@
     <LinearLayout
         style="@style/BaseTheme.ControlCenterContainer">
 
-        <soup.neumorphism.NeumorphImageButton
+        <ImageButton
             android:id="@+id/btn_subscribe"
             android:src="@drawable/control_center_subscribe_selector"
             style="@style/BaseTheme.ControlCenterToggle" />
@@ -25,7 +25,7 @@
     <LinearLayout
         style="@style/BaseTheme.ControlCenterContainer">
 
-        <soup.neumorphism.NeumorphImageButton
+        <ImageButton
             android:id="@+id/btn_view_in_map"
             android:src="@drawable/control_center_view_in_map_selector"
             style="@style/BaseTheme.ControlCenterToggle" />
@@ -37,7 +37,7 @@
     <LinearLayout
         style="@style/BaseTheme.ControlCenterContainer">
 
-        <soup.neumorphism.NeumorphImageButton
+        <ImageButton
             android:id="@+id/btn_save"
             android:src="@drawable/control_center_save_selector"
             style="@style/BaseTheme.ControlCenterToggle" />

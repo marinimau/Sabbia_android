@@ -15,8 +15,8 @@
         app:expandedTitleMarginBottom="15dp"
         app:expandedTitleMarginStart="30dp"
         app:layout_scrollFlags="scroll|exitUntilCollapsed"
-        app:contentScrim="?attr/backgroundColor"
-        app:statusBarScrim="?attr/backgroundColor"
+        app:contentScrim="?attr/elevationOverlayColor"
+        app:statusBarScrim="?attr/elevationOverlayColor"
         app:expandedTitleTextAppearance="@style/BaseTheme.MainAppBar.TitleText.Detail.Expanded"
         android:fitsSystemWindows="true">
 

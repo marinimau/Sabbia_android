@@ -18,15 +18,14 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.marinumau.sabbia.BeachDetail;
+import com.marinumau.sabbia.BeachDetailActivity;
 import com.marinumau.sabbia.R;
 
 import java.util.ArrayList;
-
-import soup.neumorphism.NeumorphCardView;
 
 public class BeachAdapter extends RecyclerView.Adapter<BeachAdapter.ViewHolder>{
 
@@ -125,7 +124,7 @@ public class BeachAdapter extends RecyclerView.Adapter<BeachAdapter.ViewHolder>{
      * @param id the id of the beach
      */
     private void showDetails(int id, View view) {
-        Intent myIntent = new Intent(activity, BeachDetail.class);
+        Intent myIntent = new Intent(activity, BeachDetailActivity.class);
         myIntent.putExtra("beach_id", id);
         activity.startActivity(myIntent, ActivityOptions.makeSceneTransitionAnimation(activity).toBundle());
     }
@@ -143,7 +142,7 @@ public class BeachAdapter extends RecyclerView.Adapter<BeachAdapter.ViewHolder>{
      *
      */
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-        NeumorphCardView container;
+        CardView container;
         TextView title;
         TextView subtitle;
         ImageView cardImg;

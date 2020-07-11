@@ -6,15 +6,11 @@ import android.os.Bundle;
 import com.bumptech.glide.Glide;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.MaterialToolbar;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
 
 import androidx.appcompat.widget.Toolbar;
-import androidx.core.widget.NestedScrollView;
 import androidx.viewpager.widget.ViewPager;
 
-import android.view.View;
 import android.widget.ImageView;
 
 import com.marinumau.sabbia.logic.BeachManager.Beach;
@@ -23,7 +19,7 @@ import com.marinumau.sabbia.ui.detail.SectionsPagerAdapter;
 
 import java.util.Objects;
 
-public class BeachDetail extends SabbiaActivity {
+public class BeachDetailActivity extends SabbiaActivity {
 
     AppBarLayout appBarLayout;
     Toolbar toolbar;

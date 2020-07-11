@@ -20,6 +20,10 @@
     <string name="home_current_activity_parking">Gratuito</string>
     <string name="title_activity_beach_detail">BeachDetail</string>
     <string name="home_current_activity_button_text">Interrompi permanenza</string>
+    <!-- home tab -->
+    <string name="home_tab_1">Recenti</string>
+    <string name="home_tab_2">Salvate</string>
+    <string name="home_tab_3">Suggerite</string>
     <!-- no activity -->
     <string name="home_no_activity_title">Non sei registrato in nessuna spiaggia</string>
     <string name="home_no_activity_description">Vai su \'cerca\' per trovare la spiaggia in cui registarti o per salvale per un secondo momento.</string>
@@ -63,14 +67,8 @@
     <string name="beach_image">beach image</string>
     <string name="header_image">header image</string>
     <string name="search_icon">search icon</string>
-    <string-array name="index_start_spinner_options">
-        <item>Oggi</item>
-        <item>Ultimi settimana</item>
-        <item>Ultimo mese</item>
-        <item>Dall\'inizio</item>
-    </string-array>
-    <!-- settings -->
     <string name="settings_title">Impostazioni</string>
+    <!-- settings -->
     <string name="settings_user_data_section_title">Dati anagrafici:</string>
     <string name="settings_links_section_title">Link utili:</string>
     <string name="settings_user_data_section_item">Modifica i tuoi dati</string>
@@ -79,8 +77,14 @@
     <string name="settings_rate">Lascia una recensione</string>
     <string name="settings_telegram_channel">Canale Telegram</string>
     <string name="settings_source">Repository Github</string>
-    <!-- dialogs -->
     <string name="dialog_interrupt_permanence_title">Interrompere la permanenza in spiaggia?</string>
+    <!-- dialogs -->
     <string name="dialog_interrupt_permanence_text">Ricorda di lasciare la spiaggia pulita</string>
     <string name="dialog_generic_confirm_button_title">Conferma</string>
+    <string-array name="index_start_spinner_options">
+        <item>Oggi</item>
+        <item>Ultimi settimana</item>
+        <item>Ultimo mese</item>
+        <item>Dall\'inizio</item>
+    </string-array>
 </resources>

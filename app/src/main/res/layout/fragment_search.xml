@@ -14,7 +14,7 @@
         tools:ignore="MissingConstraints">
 
         <!-- search button -->
-        <include layout="@layout/neumorphism_search_button" />
+        <include layout="@layout/search_button" />
 
         <!-- consigliati -->
         <TextView

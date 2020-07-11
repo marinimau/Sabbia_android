@@ -22,17 +22,19 @@
             android:text="@string/detail_index_start_from_label"
             android:layout_marginBottom="0dp"/>
 
-        <soup.neumorphism.NeumorphCardView
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingStart="6dp"
+            android:paddingEnd="6dp"
             app:cardBackgroundColor="?attr/elevationOverlayColor"
-            style="@style/BaseTheme.NeumorphismCard">
+            style="@style/BaseTheme.Card">
 
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="50dp" />
 
-        </soup.neumorphism.NeumorphCardView>
+        </androidx.cardview.widget.CardView>
 
 
         <!-- people -->

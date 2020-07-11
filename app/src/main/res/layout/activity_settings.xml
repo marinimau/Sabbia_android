@@ -32,12 +32,14 @@
 
                 <TextView
                     style="@style/BaseTheme.Label"
+                    android:layout_marginBottom="0dp"
                     android:text="@string/settings_user_data_section_title"/>
 
-                <soup.neumorphism.NeumorphCardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    style="@style/BaseTheme.NeumorphismCard">
+                    android:layout_margin="20dp"
+                    style="@style/BaseTheme.Card">
 
                     <RelativeLayout
                         style="@style/BaseTheme.MenuContainer">
@@ -52,16 +54,18 @@
 
 
 
-                </soup.neumorphism.NeumorphCardView>
+                </androidx.cardview.widget.CardView>
 
                 <TextView
                     style="@style/BaseTheme.Label"
+                    android:layout_marginBottom="0dp"
                     android:text="@string/settings_links_section_title"/>
 
-                <soup.neumorphism.NeumorphCardView
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    style="@style/BaseTheme.NeumorphismCard">
+                    android:layout_margin="20dp"
+                    style="@style/BaseTheme.Card">
 
                     <RelativeLayout
                        style="@style/BaseTheme.MenuContainer"
@@ -74,7 +78,7 @@
 
                     </RelativeLayout>
 
-                </soup.neumorphism.NeumorphCardView>
+                </androidx.cardview.widget.CardView>
 
                 <TextView
                     android:layout_width="match_parent"
