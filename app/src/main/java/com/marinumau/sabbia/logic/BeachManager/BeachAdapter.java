@@ -45,7 +45,7 @@ public class BeachAdapter extends RecyclerView.Adapter<BeachAdapter.ViewHolder>{
         this.beachItems = data;
         this.context = context;
         this.activity = activity;
-        this.type = 0;
+        this.type = 1;
     }
 
     /**
@@ -76,7 +76,7 @@ public class BeachAdapter extends RecyclerView.Adapter<BeachAdapter.ViewHolder>{
                 view = mInflater.inflate(R.layout.last_updated_beach_item, parent, false);
                 break;
             case 1:
-                view = mInflater.inflate(R.layout.saved_beach_item, parent, false);
+                view = mInflater.inflate(R.layout.card_beach_item, parent, false);
                 break;
             default:
                 view = mInflater.inflate(R.layout.home_activity_history_item, parent, false);

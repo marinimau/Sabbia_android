@@ -2,8 +2,8 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/card_container"
-    android:layout_width="230dp"
-    android:layout_height="130dp"
+    android:layout_width="290dp"
+    android:layout_height="200dp"
     android:clickable="true"
     android:focusable="true"
     style="@style/BaseTheme.BeachCard">

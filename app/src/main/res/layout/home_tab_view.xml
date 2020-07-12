@@ -8,7 +8,7 @@
     tools:ignore="RtlSymmetry">
 
     <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tabs"
+        android:id="@+id/home_tabs"
         android:layout_gravity="center"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"

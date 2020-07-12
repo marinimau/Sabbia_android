@@ -7,18 +7,34 @@
 
 package com.marinumau.sabbia.ui.homePageViewer;
 
+import android.os.Bundle;
 import android.view.View;
 
 import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
-import com.marinumau.sabbia.R;
 import com.marinumau.sabbia.logic.BeachManager.BeachAdapter;
 import com.marinumau.sabbia.logic.BeachManager.BeachFactory;
+import com.marinumau.sabbia.ui.detail.PostFragment;
 
 import java.util.Objects;
 
 public class HistoryFragment extends BeachFragment {
+
+
+    private static final String ARG_SECTION_NUMBER = "section_number";
+
+    /**
+     *
+     * @param index the index of the fragment
+     * @return the postFragment
+     */
+    public static HistoryFragment newInstance(int index) {
+        HistoryFragment fragment = new HistoryFragment();
+        Bundle bundle = new Bundle();
+        bundle.putInt(ARG_SECTION_NUMBER, index);
+        fragment.setArguments(bundle);
+        return fragment;
+    }
 
     /**
      *
@@ -26,13 +42,6 @@ public class HistoryFragment extends BeachFragment {
      */
     public void populateBeachList(View root){
         BeachFactory beachFactory = BeachFactory.getInstance();
-        RecyclerView recyclerView = root.findViewById(R.id.rv);
-
-        LinearLayoutManager layoutManager
-                = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
-        recyclerView.setLayoutManager(layoutManager);
-
-        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         BeachAdapter adapter = new BeachAdapter(getActivity(), Objects.requireNonNull(getActivity()).getApplicationContext(), beachFactory.getBeachList());
         recyclerView.setAdapter(adapter);
     }

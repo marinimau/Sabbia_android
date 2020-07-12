@@ -10,11 +10,12 @@ package com.marinumau.sabbia.ui.homePageViewer;
 
 import android.content.Context;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.StringRes;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.fragment.app.FragmentStatePagerAdapter;
 
 import com.marinumau.sabbia.R;
 
@@ -22,7 +23,7 @@ import com.marinumau.sabbia.R;
  * A [FragmentPagerAdapter] that returns a fragment corresponding to
  * one of the sections/tabs/pages.
  */
-public class SectionsPagerAdapter extends FragmentPagerAdapter {
+public class SectionsCarouselAdapter extends FragmentStatePagerAdapter {
 
     @StringRes
     private static final int[] TAB_TITLES = new int[]{R.string.home_tab_1, R.string.home_tab_2, R.string.home_tab_3};
@@ -33,7 +34,7 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
      * @param context the context
      * @param fm the fragment manager
      */
-    public SectionsPagerAdapter(Context context, FragmentManager fm) {
+    public SectionsCarouselAdapter(Context context, FragmentManager fm) {
         super(fm);
         mContext = context;
     }
@@ -43,6 +44,7 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
      * @param position the current position in the view pager
      * @return the fragment for the given position
      */
+    @NonNull
     @Override
     public Fragment getItem(int position) {
 

@@ -10,7 +10,8 @@ import android.view.MenuItem;
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
-import com.marinumau.sabbia.ui.homePageViewer.SectionsPagerAdapter;
+import com.marinumau.sabbia.ui.homePageViewer.SectionsCarouselAdapter;
+import com.marinumau.sabbia.utils.ZoomOutPageTransformer;
 
 
 public class HomeActivity extends SabbiaActivity {
@@ -26,8 +27,8 @@ public class HomeActivity extends SabbiaActivity {
         setContentView(R.layout.activity_home);
 
         super.initActionBar();
-        initTabs();
         toolbar.inflateMenu(R.menu.options_menu);
+        initBeachTabs();
     }
 
 
@@ -68,11 +69,13 @@ public class HomeActivity extends SabbiaActivity {
     /**
      *
      */
-    private void initTabs(){
-        SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager());
-        ViewPager viewPager = findViewById(R.id.view_pager);
-        viewPager.setAdapter(sectionsPagerAdapter);
-        TabLayout tabs = findViewById(R.id.tabs);
+    private void initBeachTabs(){
+        SectionsCarouselAdapter sectionsCarouselAdapter = new SectionsCarouselAdapter(this, getSupportFragmentManager());
+        ViewPager viewPager = findViewById(R.id.home_view_pager);
+        viewPager.setPageTransformer(true, new ZoomOutPageTransformer());
+        viewPager.setAdapter(sectionsCarouselAdapter);
+        viewPager.setOffscreenPageLimit(2);
+        TabLayout tabs = findViewById(R.id.home_tabs);
         tabs.setupWithViewPager(viewPager);
     }
 }
