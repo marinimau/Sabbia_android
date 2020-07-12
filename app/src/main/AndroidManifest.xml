@@ -23,17 +23,14 @@
         <activity
             android:name=".Settings"
             android:label="@string/settings_title"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".HomeActivity" />
         <activity
             android:name=".SearchActive"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".HomeActivity" />
         <activity
             android:name=".BeachDetailActivity"
             android:label="@string/title_activity_beach_detail"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name" />
+            android:parentActivityName=".HomeActivity" />
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
 

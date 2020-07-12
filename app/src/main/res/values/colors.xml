@@ -9,7 +9,7 @@
     -->
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorAccent">#303F9F</color>
     <color name="colorBackground">#EEEEF4</color>
     <color name="colorText">#28282E</color>
     <color name="colorTextHint">#A326262B</color>
@@ -29,7 +29,7 @@
     -->
     <color name="darkModeColorPrimary">#6200EE</color>
     <color name="darkModeColorPrimaryDark">#3700B3</color>
-    <color name="darkModeColorAccent">#03DAC5</color>
+    <color name="darkModeColorAccent">#1976D2</color>
     <color name="darkModeColorBackground">#202020</color>
     <color name="darkModeColorText">#EFEFEF</color>
     <color name="darkModeColorTextHint">#85ADADAD</color>

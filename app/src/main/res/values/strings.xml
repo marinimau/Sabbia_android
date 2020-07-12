@@ -5,7 +5,7 @@
     <string name="title_home">Home</string>
     <string name="title_search">Cerca</string>
     <!-- beach history -->
-    <string name="home_last_activities_label">Spiagge visitate</string>
+    <string name="home_last_activities_label">Attività corrente</string>
     <string name="item_title">Title</string>
     <string name="item_subtitle">Subtitle</string>
     <!-- current activity -->

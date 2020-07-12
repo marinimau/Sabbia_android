@@ -6,12 +6,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.tabs.TabLayout;
 import com.marinumau.sabbia.ui.homePageViewer.SectionsCarouselAdapter;
 import com.marinumau.sabbia.utils.ZoomOutPageTransformer;
+
+import soup.neumorphism.NeumorphButton;
 
 
 public class HomeActivity extends SabbiaActivity {
@@ -29,6 +33,7 @@ public class HomeActivity extends SabbiaActivity {
         super.initActionBar();
         toolbar.inflateMenu(R.menu.options_menu);
         initBeachTabs();
+        initSearchBtn();
     }
 
 
@@ -77,5 +82,27 @@ public class HomeActivity extends SabbiaActivity {
         viewPager.setOffscreenPageLimit(2);
         TabLayout tabs = findViewById(R.id.home_tabs);
         tabs.setupWithViewPager(viewPager);
+    }
+
+    /**
+     *
+     */
+    private void initSearchBtn(){
+        Button searchBtnN = (Button) findViewById(R.id.search_btn);
+        searchBtnN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                activateSearch();
+            }
+        });
+    }
+
+    /**
+     *
+     */
+    private void activateSearch(){
+        Intent myIntent = new Intent(this, SearchActive.class);
+        myIntent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+        startActivity(myIntent);
     }
 }
