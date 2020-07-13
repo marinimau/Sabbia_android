@@ -7,7 +7,7 @@
     *                                                                                              *
     ************************************************************************************************
     -->
-    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimary">#28282E</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorAccent">#303F9F</color>
     <color name="colorBackground">#EEEEF4</color>
@@ -27,7 +27,7 @@
     *                                                                                              *
     ************************************************************************************************
     -->
-    <color name="darkModeColorPrimary">#6200EE</color>
+    <color name="darkModeColorPrimary">#EFEFEF</color>
     <color name="darkModeColorPrimaryDark">#3700B3</color>
     <color name="darkModeColorAccent">#1976D2</color>
     <color name="darkModeColorBackground">#202020</color>

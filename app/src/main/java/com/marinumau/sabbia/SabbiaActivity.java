@@ -44,7 +44,6 @@ public abstract class SabbiaActivity extends AppCompatActivity {
                 getResources().getConfiguration().uiMode &
                         Configuration.UI_MODE_NIGHT_MASK;
 
-
         switch (currentNightMode) {
             case Configuration.UI_MODE_NIGHT_NO:
                 setTheme(R.style.LightTheme);

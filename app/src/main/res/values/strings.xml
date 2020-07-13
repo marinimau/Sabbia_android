@@ -81,6 +81,9 @@
     <!-- dialogs -->
     <string name="dialog_interrupt_permanence_text">Ricorda di lasciare la spiaggia pulita</string>
     <string name="dialog_generic_confirm_button_title">Conferma</string>
+    <string name="control_center_subscribe_label">Registrati</string>
+    <string name="control_center_view_in_map_label">Mappa</string>
+    <string name="control_center_save_label">Salva</string>
     <string-array name="index_start_spinner_options">
         <item>Oggi</item>
         <item>Ultimi settimana</item>

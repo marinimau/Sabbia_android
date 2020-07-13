@@ -19,10 +19,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/post_rv"
+            android:layout_marginTop="20dp"
             android:numColumns="1"
             android:paddingStart="12dp"
             android:paddingEnd="12dp"
-            android:paddingBottom="36dp"/>
+            android:paddingBottom="0dp"/>
 
     </LinearLayout>
 

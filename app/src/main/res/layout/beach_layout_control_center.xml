@@ -14,10 +14,17 @@
     <LinearLayout
         style="@style/BaseTheme.ControlCenterContainer">
 
-        <ImageButton
+        <ToggleButton
             android:id="@+id/btn_subscribe"
-            android:src="@drawable/control_center_subscribe_selector"
+            android:text=""
+            android:textOn=""
+            android:textOff=""
+            android:background="@drawable/control_center_subscribe_selector"
             style="@style/BaseTheme.ControlCenterToggle" />
+
+        <TextView
+            style="@style/BaseTheme.ControlCenterLabel"
+            android:text="@string/control_center_subscribe_label"/>
 
     </LinearLayout>
 
@@ -25,10 +32,17 @@
     <LinearLayout
         style="@style/BaseTheme.ControlCenterContainer">
 
-        <ImageButton
+        <ToggleButton
             android:id="@+id/btn_view_in_map"
-            android:src="@drawable/control_center_view_in_map_selector"
+            android:text=""
+            android:textOn=""
+            android:textOff=""
+            android:background="@drawable/control_center_view_in_map_selector"
             style="@style/BaseTheme.ControlCenterToggle" />
+
+        <TextView
+            style="@style/BaseTheme.ControlCenterLabel"
+            android:text="@string/control_center_view_in_map_label"/>
 
 
     </LinearLayout>
@@ -37,10 +51,17 @@
     <LinearLayout
         style="@style/BaseTheme.ControlCenterContainer">
 
-        <ImageButton
+        <ToggleButton
             android:id="@+id/btn_save"
-            android:src="@drawable/control_center_save_selector"
+            android:text=""
+            android:textOn=""
+            android:textOff=""
+            android:background="@drawable/control_center_save_selector"
             style="@style/BaseTheme.ControlCenterToggle" />
+
+        <TextView
+            style="@style/BaseTheme.ControlCenterLabel"
+            android:text="@string/control_center_save_label"/>
 
     </LinearLayout>
 

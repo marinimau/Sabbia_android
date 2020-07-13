@@ -9,12 +9,14 @@ package com.marinumau.sabbia.logic.PostManager;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 import com.marinumau.sabbia.R;
 
@@ -66,7 +68,16 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder>{
         holder.author.setText(postItems.get(position).getAuthor());
         holder.date.setText(postItems.get(position).getDate());
         holder.corpus.setText(postItems.get(position).getCorpus());
-        
+
+        try {
+            if(activity.getPackageManager().getActivityInfo(activity.getComponentName(), 0).getThemeResource() == R.style.DarkTheme) {
+                holder.root.setCardBackgroundColor(activity.getColor(R.color.darkModeColorElevated));
+            }
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
+
+
     }
     
 
@@ -83,12 +94,14 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder>{
      *
      */
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+        CardView root;
         TextView author;
         TextView date;
         TextView corpus;
 
         ViewHolder(View itemView) {
             super(itemView);
+            root = itemView.findViewById(R.id.card_container);
             author = itemView.findViewById(R.id.author);
             date = itemView.findViewById(R.id.date);
             corpus = itemView.findViewById(R.id.corpus);

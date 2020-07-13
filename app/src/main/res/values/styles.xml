@@ -182,30 +182,32 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_weight">0.33</item>
         <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
     </style>
 
     <style name="BaseTheme.ControlCenterToggle" parent="Widget.AppCompat.ImageButton">
-        <item name="android:layout_width">88dp</item>
-        <item name="android:layout_height">88dp</item>
-        <item name="android:background">?attr/elevationOverlayColor</item>
+        <item name="android:layout_width">35dp</item>
+        <item name="android:layout_height">35dp</item>
         <item name="android:paddingStart">6dp</item>
         <item name="android:translationZ">6dp</item>
         <item name="android:shadowRadius">20</item>
         <item name="android:padding">10dp</item>
         <item name="android:layout_margin">15dp</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
     </style>
 
-    <style name="BaseTheme.ControlCenterToggle.Btn">
-        <item name="android:layout_width">25dp</item>
-        <item name="android:layout_height">25dp</item>
-        <item name="background">@android:color/transparent</item>
+
+    <style name="BaseTheme.ControlCenterLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/sf_display_semibold</item>
         <item name="android:textSize">12sp</item>
-        <item name="fontFamily">@font/sf_display_medium</item>
-        <item name="android:gravity">center|bottom</item>
-        <item name="android:paddingTop">20dp</item>
-        <item name="android:paddingBottom">5dp</item>
-        <item name="android:layout_margin">20dp</item>
+        <item name="alpha">0.7</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textAlignment">center</item>
     </style>
+
     <!--
     ************************************************************************************************
     *                                                                                              *
@@ -221,7 +223,8 @@
         <item name="android:paddingStart">12dp</item>
         <item name="android:paddingEnd">12dp</item>
         <item name="android:paddingTop">6dp</item>
-        <item name="android:paddingBottom">15dp</item>
+        <item name="android:paddingBottom">18dp</item>
+        <item name="android:shadowRadius">6</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
 
@@ -372,17 +375,13 @@
         <item name="android:padding">20dp</item>
         <item name="cardBackgroundColor">?attr/elevationOverlayColor</item>
         <item name="android:shadowRadius">20</item>
-        <item name="android:translationZ">20dp</item>
+        <item name="android:translationZ">5dp</item>
         <item name="android:shadowDx">0</item>
         <item name="android:shadowDy">6</item>
+        <item name="android:ambientShadowAlpha">1</item>
+        <item name="android:supportsAmbientMode">true</item>
     </style>
 
-    <style name="BaseTheme.NeumorphismCard" parent="BaseTheme.Card">
-        <item name="neumorph_backgroundColor">?attr/backgroundColor</item>
-        <item name="neumorph_shadowElevation">6dp</item>
-        <item name="neumorph_shadowColorLight">?attr/neumorphismShadowLight</item>
-        <item name="neumorph_shadowColorDark">?attr/neumorphismShadowDark</item>
-    </style>
 
     <style name="BaseTheme.BeachCard" parent="BaseTheme.Card">
         <item name="cardBackgroundColor">@color/colorBackground</item>
