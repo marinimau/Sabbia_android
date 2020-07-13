@@ -9,8 +9,8 @@ package com.marinumau.sabbia.logic.PostManager;
 
 import android.app.Activity;
 import android.content.Context;
-import android.content.pm.PackageManager;
 import android.content.res.Configuration;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -70,11 +70,20 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder>{
         holder.author.setText(postItems.get(position).getAuthor());
         holder.date.setText(postItems.get(position).getDate());
         holder.corpus.setText(postItems.get(position).getCorpus());
+        adjustTheme(holder);
+    }
 
+    /**
+     *
+     * @param holder the view holder
+     */
+    private void adjustTheme(@NonNull PostAdapter.ViewHolder holder){
         if(UIConfigurationManager.getNightModeConfiguration(activity) == Configuration.UI_MODE_NIGHT_YES){
             holder.root.setCardBackgroundColor(activity.getColor(R.color.darkModeColorElevated));
+            holder.author.setTextColor(Color.WHITE);
+            holder.date.setTextColor(Color.WHITE);
+            holder.corpus.setTextColor(Color.WHITE);
         }
-
     }
     
 
