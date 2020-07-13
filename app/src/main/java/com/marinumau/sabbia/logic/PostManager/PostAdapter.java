@@ -10,6 +10,7 @@ package com.marinumau.sabbia.logic.PostManager;
 import android.app.Activity;
 import android.content.Context;
 import android.content.pm.PackageManager;
+import android.content.res.Configuration;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,6 +20,7 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 import com.marinumau.sabbia.R;
+import com.marinumau.sabbia.utils.UIConfigurationManager;
 
 import java.util.ArrayList;
 
@@ -69,14 +71,9 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.ViewHolder>{
         holder.date.setText(postItems.get(position).getDate());
         holder.corpus.setText(postItems.get(position).getCorpus());
 
-        try {
-            if(activity.getPackageManager().getActivityInfo(activity.getComponentName(), 0).getThemeResource() == R.style.DarkTheme) {
-                holder.root.setCardBackgroundColor(activity.getColor(R.color.darkModeColorElevated));
-            }
-        } catch (PackageManager.NameNotFoundException e) {
-            e.printStackTrace();
+        if(UIConfigurationManager.getNightModeConfiguration(activity) == Configuration.UI_MODE_NIGHT_YES){
+            holder.root.setCardBackgroundColor(activity.getColor(R.color.darkModeColorElevated));
         }
-
 
     }
     

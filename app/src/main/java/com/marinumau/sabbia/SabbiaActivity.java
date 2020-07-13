@@ -15,6 +15,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.MaterialToolbar;
+import com.marinumau.sabbia.utils.UIConfigurationManager;
 
 
 public abstract class SabbiaActivity extends AppCompatActivity {
@@ -37,14 +38,7 @@ public abstract class SabbiaActivity extends AppCompatActivity {
      */
     protected void evaluateUITheme(){
 
-        Configuration configuration = new Configuration();
-        configuration.setToDefaults();
-
-        int currentNightMode =
-                getResources().getConfiguration().uiMode &
-                        Configuration.UI_MODE_NIGHT_MASK;
-
-        switch (currentNightMode) {
+        switch (UIConfigurationManager.getNightModeConfiguration(this)) {
             case Configuration.UI_MODE_NIGHT_NO:
                 setTheme(R.style.LightTheme);
                 break;
