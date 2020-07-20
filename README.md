@@ -1,6 +1,6 @@
-# Sabbia (Android)
+![Sabbia header](https://github.com/marinimau/Sabbia_android/blob/master/sabbia_header.png)
 
-A Material Design UI implementation.
+
 
 ### UI features:
 
