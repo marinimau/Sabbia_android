@@ -11,5 +11,3 @@ A Material Design UI implementation.
 
 ### Video
 
-### Screens
-
