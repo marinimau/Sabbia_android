@@ -1,6 +1,6 @@
 # Sabbia (Android)
 
-A material design UI implementation.
+A Material Design UI implementation.
 
 ### UI features:
 
