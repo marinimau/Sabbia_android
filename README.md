@@ -13,3 +13,8 @@
 
 [Sabbia Ui test video](https://youtu.be/_E0SDmaZ_bE "Sabbia UI test video")
 
+
+### Licence
+
+[MIT](https://www.mit.edu/~amini/LICENSE.md "MIT license")
+
