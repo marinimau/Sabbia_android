@@ -1,6 +1,5 @@
 MIT License
 
-Copyright (c) 2014-2019 Michael Woods
 Copyright (c) 2020 @marinimau
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
